@@ -25,71 +25,105 @@
           <!-- Рамытая фотография горы тоже будет background-img -->
         <h1 class="visually-hidden">Sedona hotels</h1>
         <ul class="banner-menu">
-            <li>
-                <h3 class="header-menu">Инфраструктура:</h3>
-                    <form action="" method="post">
-                        <input type="checkbox" name="swimingpool" value="1" checked /> Бассейн
-                        <input type="checkbox" name="parking" value="2" /> Парковка
-                        <input type="checkbox" name="wifi" value="3" /> Wi-Fi
-                    </form>
+          <li>
+            <h3 class="header-menu">Инфраструктура:</h3>
+              <form action="" method="post">
+                <input type="checkbox" name="swimingpool" value="1" checked /> Бассейн
+                <input type="checkbox" name="parking" value="2" /> Парковка
+                <input type="checkbox" name="wifi" value="3" /> Wi-Fi
+              </form>
                     
-            </li>
-            <li>
-                <h3 class="header-menu">Тип жилья:</h3>
-                    <form action="" method="post">
-                        <input type="checkbox" name="hotel" value="4" checked /> Гостиница
-                        <input type="checkbox" name="motel" value="5" checked /> Мотель
-                        <input type="checkbox" name="apartments" value="6" checked /> Апартаменты
-                    </form>                
-            </li>
-            <li>
-                <h3 class="header-menu">Стоимость в сутки (р)</h3>
-                    <table style="price">
-                        <tr>
-                            <td>от 0</td>
-                            <td>до 3000</td>
-                        </tr>
-                    </table>
+           </li>
+           <li>
+             <h3 class="header-menu">Тип жилья:</h3>
+               <form action="" method="post">
+                 <input type="checkbox" name="hotel" value="4" checked /> Гостиница
+                 <input type="checkbox" name="motel" value="5" checked /> Мотель
+                 <input type="checkbox" name="apartments" value="6" checked /> Апартаменты
+               </form>                
+           </li>
+           <li>
+             <h3 class="header-menu">Стоимость в сутки (р)</h3>
+               <table style="price">
+                 <tr>
+                   <td>от 0</td>
+                   <td>до 3000</td>
+                 </tr>
+               </table>
                     <!-- здесь ещё слайдер надо вставить -->                
-            </li>
-            <button type="button" class="show_all">Показать</button>
+           </li>
+           <button type="button" class="show-all">Показать</button>
         </ul>
       </section>
         
-        <section class="search_results_header">
-            <div>Найдено: 
-            3 <!-- как подставлять результаты поиска? --></div>
-            <ul class="search_results"><li>Сортировка:</li>
-            <li>По цене</li>
-            <li>По типу</li>
-                <div>По рейтингу</li></ul>
-            
-        </section>
-        <section class="hotels_found">
-            <ul class="hotels_list">
-                <li class="hotel">
-                    <h4 class="hotel_name">Amara Resort & Spa</h4>
-                    <p class="hotel_type">Гостиница</p> <!-- как-то надо их из БД вытаскивать?-->
-                    <p class="price_range">от 4000 р.</p>
-                    <button type="button" class="show_details">Подробнее</button>
-                    <button type="button" class="booking">Забронировать</button>
-                </li>
-                <li class="hotel">
-                    <h4 class="hotel_name">Desert Quail Inn</h4>
-                    <p class="hotel_type">Мотель</p> 
-                    <p class="price_range">от 3000 р.</p>
-                    <button type="button" class="show_details">Подробнее</button>
-                    <button type="button" class="booking">Забронировать</button>
-                </li>
-                <li class="hotel">
-                    <h4 class="hotel_name">Villas at Poco Diablo</h4>
-                    <p class="hotel_type">Апартаменты</p> 
-                    <p class="price_range">от 2000 р.</p>
-                    <button type="button" class="show_details">Подробнее</button>
-                    <button type="button" class="booking">Забронировать</button>
-                </li>
-            </ul>
-        </section>            
+      <section class="search-results-header">
+        <ul class="breadcrumps">
+          <li class="hotels-returned">Найдено: 3</li>
+        
+        <!-- как подставлять результаты поиска? -->
+          <li class="sorting-type">Сортировка:</li>
+          <li class="breadcrumps-current">По цене</li>
+          <li><a href="#">По типу</a></li>  <!-- надо добавить ссылку -->
+          <li><a href="#">По рейтингу</a></li>  <!-- надо добавить ссылку -->
+          <li class="arrow-up current">&#9650;</li>
+          <li class="arrow-down"><a href="#">&#9660;</a></li> <!-- jscript? -->
+        </ul>
+      </section>
+      <section class="hotels-found">
+        <ul class="hotels-list">
+          <li class="hotel">
+            <h4 class="hotel-name">Amara Resort &amp; Spa</h4>
+            <p class="hotel-type">Гостиница</p> <!-- как-то надо их из БД вытаскивать?-->
+            <p class="price-range">от 4000 р.</p>
+            <button type="button" class="show-details">Подробнее</button>
+            <button type="button" class="booking">Забронировать</button>
+            <div class="stars four-stars">
+              <ul class="stars">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li class="visually-hidden">5</li>                
+              </ul>
+            </div> <!-- Тут эти звёздочки покажутся при помощи CSS и sprite-->
+            <div class="rating-score">Рейтинг: 8.5</div>
+          </li>
+          <li class="hotel">
+            <h4 class="hotel-name">Desert Quail Inn</h4>
+            <p class="hotel-type">Мотель</p> 
+            <p class="price-range">от 3000 р.</p>
+            <button type="button" class="show-details">Подробнее</button>
+            <button type="button" class="booking">Забронировать</button>
+            <div class="stars three-stars">
+              <ul class="stars">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li class="visually-hidden">4</li>
+                <li class="visually-hidden">5</li>                
+              </ul>  
+            </div> <!-- Тут эти звёздочки при помощи CSS&sprite надо размножить в нужном кол-ве-->
+            <div class="rating-score">Рейтинг: 8.9</div>
+          </li>
+          <li class="hotel">
+            <h4 class="hotel-name">Villas at Poco Diablo</h4>
+            <p class="hotel-type">Апартаменты</p> 
+            <p class="price-range">от 2000 р.</p>
+            <button type="button" class="show-details">Подробнее</button>
+            <button type="button" class="booking">Забронировать</button>
+            <div class="stars two-stars">
+              <ul class="stars">
+                <li>1</li>
+                <li>2</li>
+                <li class="visually-hidden">3</li>
+                <li class="visually-hidden">4</li>
+                <li class="visually-hidden">5</li>                
+              </ul>
+            </div> <!-- Тут эти звёздочки при помощи CSS&sprite надо размножить в нужном кол-ве-->
+            <div class="rating-score">Рейтинг: 9.2</div>
+          </li>
+        </ul>
+      </section>            
      
     </main>
     <footer class="main-footer">
