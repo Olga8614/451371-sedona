@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип города Седоны">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="photo.html">Фото и видео</a></li>
+          <li><a href="arizona_map.html">Карта штата</a></li>
+          <li class="site-navigation-current">Гостиницы</li>
+        </ul>        
+      </nav>
+    </header>
+    <main class="container">
+      <section class="banner">
+          <!-- Рамытая фотография горы тоже будет background-img -->
+        <h1 class="visually-hidden">Sedona hotels</h1>
+        <ul class="banner-menu">
+            <li>
+                <h3 class="header-menu">Инфраструктура:</h3>
+                    <form action="" method="post">
+                        <input type="checkbox" name="swimingpool" value="1" checked /> Бассейн
+                        <input type="checkbox" name="parking" value="2" /> Парковка
+                        <input type="checkbox" name="wifi" value="3" /> Wi-Fi
+                    </form>
+                    
+            </li>
+            <li>
+                <h3 class="header-menu">Тип жилья:</h3>
+                    <form action="" method="post">
+                        <input type="checkbox" name="hotel" value="4" checked /> Гостиница
+                        <input type="checkbox" name="motel" value="5" checked /> Мотель
+                        <input type="checkbox" name="apartments" value="6" checked /> Апартаменты
+                    </form>                
+            </li>
+            <li>
+                <h3 class="header-menu">Стоимость в сутки (р)</h3>
+                    <table style="price">
+                        <tr>
+                            <td>от 0</td>
+                            <td>до 3000</td>
+                        </tr>
+                    </table>
+                    <!-- здесь ещё слайдер надо вставить -->                
+            </li>
+            <button type="button" class="show_all">Показать</button>
+        </ul>
+      </section>
+        
+        <section class="search_results_header">
+            <div>Найдено: 
+            3 <!-- как подставлять результаты поиска? --></div>
+            <ul class="search_results"><li>Сортировка:</li>
+            <li>По цене</li>
+            <li>По типу</li>
+                <div>По рейтингу</li></ul>
+            
+        </section>
+        <section class="hotels_found">
+            <ul class="hotels_list">
+                <li class="hotel">
+                    <h4 class="hotel_name">Amara Resort & Spa</h4>
+                    <p class="hotel_type">Гостиница</p> <!-- как-то надо их из БД вытаскивать?-->
+                    <p class="price_range">от 4000 р.</p>
+                    <button type="button" class="show_details">Подробнее</button>
+                    <button type="button" class="booking">Забронировать</button>
+                </li>
+                <li class="hotel">
+                    <h4 class="hotel_name">Desert Quail Inn</h4>
+                    <p class="hotel_type">Мотель</p> 
+                    <p class="price_range">от 3000 р.</p>
+                    <button type="button" class="show_details">Подробнее</button>
+                    <button type="button" class="booking">Забронировать</button>
+                </li>
+                <li class="hotel">
+                    <h4 class="hotel_name">Villas at Poco Diablo</h4>
+                    <p class="hotel_type">Апартаменты</p> 
+                    <p class="price_range">от 2000 р.</p>
+                    <button type="button" class="show_details">Подробнее</button>
+                    <button type="button" class="booking">Забронировать</button>
+                </li>
+            </ul>
+        </section>            
+     
+    </main>
+    <footer class="main-footer">
+      
+      <div class="footer-social">
+        <b>#VISITSEDONA</b>
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>WEBSITE BY</b> 
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>     
+  </body>
+</html>
