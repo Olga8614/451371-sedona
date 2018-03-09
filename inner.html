@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
 
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo"  href="http://www.sedonaaz.gov/">
             <img src="img/logo.png" width="106" height="40" alt="Логотип города Седоны" fill="#81b3d2">
             
         </a>
@@ -23,15 +24,18 @@
     </header>
     <main class="container">
       <section class="banner">
-          <img src="img/foto-background.jpg" width="100%"  alt="Фотография горы в Седоне">
+          <img src="img/foto-background.jpg" width="100%"  alt="Фотография горы в Седоне"> <!-- move to CSS -->
         <h1 class="visually-hidden">Sedona hotels</h1>
         <ul class="banner-menu">
           <li>
             <h3 class="header-menu">Инфраструктура:</h3>
               <form action="" method="post">
-                <input type="checkbox" src="img/checkbox-on.svg" name="swimingpool" value="1" checked /> Бассейн
-                <input type="checkbox" src="img/checkbox-off.svg" name="parking" value="2" /> Парковка
+                  <ul>
+                    <li><label class="hotel-types" for="swimmingpool">Бассейн</label>
+                  <input class="checkbox" type="checkbox" id="swimmingpool" name="swimingpool" value="1" checked /> <!-- src="img/checkbox-on.svg" --> </li> 
+                <li><input type="checkbox" id="parking" src="img/checkbox-off.svg" name="parking" value="2" /> Парковка</li>
                 <input type="checkbox" src="img/checkbox-off.svg" name="wifi" value="3" /> Wi-Fi
+                      </ul>
               </form>
                     
            </li>
@@ -131,16 +135,19 @@
     <footer class="main-footer">
       
       <div class="footer-social">
-        <b>#VISITSEDONA</b>
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
+        <b class="footer">#VISITSEDONA</b>
+          <a class="social-button" href="https://twitter.com/CityofSedonaAZ">
+              <img src="img/tw.svg" width="70" height="70" alt="Твиттер" fill="#81b3d2"> </a> <!-- надо поменять все размеры с 70х70 на реальные -->
+          <a class="social-button" href="https://www.facebook.com/CityofSedonaAZ">
+              <img src="img/fb-icon.svg" width="70" height="70" alt="Фейсбук" fill="#81b3d2"></a>
+          <a class="social-button" href="https://www.youtube.com/user/CityofSedonaAZ">
+              <img src="img/youtube.svg" width="70" height="70" alt="Youtube" fill="#81b3d2"></a>
+            
+               
       </div>
       <p class="footer-copyright">
-        <b>WEBSITE BY</b> 
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <b class="footer">WEBSITE BY</b> 
+        <a class="footer htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo_name.svg" width="70" height="70" alt="HTML Academy" fill="#111111"> </a> <!-- что-то никак не получается добавить к нему цвет -->
       </p>
     </footer>     
   </body>
