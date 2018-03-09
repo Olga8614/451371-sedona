@@ -10,7 +10,8 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип города Седоны">
+            <img src="img/logo.png" width="106" height="40" alt="Логотип города Седоны" fill="#81b3d2">
+            
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -22,24 +23,24 @@
     </header>
     <main class="container">
       <section class="banner">
-          <!-- Рамытая фотография горы тоже будет background-img -->
+          <img src="img/foto-background.jpg" width="100%"  alt="Фотография горы в Седоне">
         <h1 class="visually-hidden">Sedona hotels</h1>
         <ul class="banner-menu">
           <li>
             <h3 class="header-menu">Инфраструктура:</h3>
               <form action="" method="post">
-                <input type="checkbox" name="swimingpool" value="1" checked /> Бассейн
-                <input type="checkbox" name="parking" value="2" /> Парковка
-                <input type="checkbox" name="wifi" value="3" /> Wi-Fi
+                <input type="checkbox" src="img/checkbox-on.svg" name="swimingpool" value="1" checked /> Бассейн
+                <input type="checkbox" src="img/checkbox-off.svg" name="parking" value="2" /> Парковка
+                <input type="checkbox" src="img/checkbox-off.svg" name="wifi" value="3" /> Wi-Fi
               </form>
                     
            </li>
            <li>
              <h3 class="header-menu">Тип жилья:</h3>
                <form action="" method="post">
-                 <input type="checkbox" name="hotel" value="4" checked /> Гостиница
-                 <input type="checkbox" name="motel" value="5" checked /> Мотель
-                 <input type="checkbox" name="apartments" value="6" checked /> Апартаменты
+                 <input type="checkbox" src="img/checkbox-on.svg" name="hotel" value="4" checked /> Гостиница
+                 <input type="checkbox" src="img/checkbox-on.svg" name="motel" value="5" checked /> Мотель
+                 <input type="checkbox" src="img/checkbox-on.svg" name="apartments" value="6" checked /> Апартаменты
                </form>                
            </li>
            <li>
@@ -50,7 +51,7 @@
                    <td>до 3000</td>
                  </tr>
                </table>
-                    <!-- здесь ещё слайдер надо вставить -->                
+                    <input type="range" class="range" min="0" max="5000" step="100" background="img/filter-button.svg">                
            </li>
            <button type="button" class="show-all">Показать</button>
         </ul>
@@ -73,6 +74,7 @@
         <ul class="hotels-list">
           <li class="hotel">
             <h4 class="hotel-name">Amara Resort &amp; Spa</h4>
+            <img src="img/hotel1.jpg" width="200" height="150">
             <p class="hotel-type">Гостиница</p> <!-- как-то надо их из БД вытаскивать?-->
             <p class="price-range">от 4000 р.</p>
             <button type="button" class="show-details">Подробнее</button>
