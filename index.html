@@ -92,10 +92,25 @@
       <p class="booking-info">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <h5>Поиск гостиницы в Седоне</h5>
-            Дата заезда
-            Дата выезда
-            Взрослые
-            Дети
+            
+            <div class="feedback-form-group">
+                <label for="first-date">Дата заезда</label>
+                <input type="date" name="first-date" id="first-date">
+            </div>
+            <div class="feedback-form-group">
+                <label for="last-date">Дата выезда</label>
+                <input type="date" name="last-date" id="last-date">
+            </div>
+            <div class="feedback-form-group">
+                <label for="adults">Взрослые</label>
+                <input type="number" name="adults" id="adults" min="0" max="10" value="2">
+            </div>
+            <div class="feedback-form-group">
+                <label for="kids">Дети</label>
+                <input type="number" name="kids" id="kids" min="0" max="10">
+            </div>
+            
+            
             <button>Найти</button>
         </form>
         
