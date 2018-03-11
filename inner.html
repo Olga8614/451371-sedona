@@ -69,9 +69,10 @@
           <li class="sorting-type">Сортировка:</li>
           <li class="breadcrumps-current">По цене</li>
           <li><a href="#">По типу</a></li>  <!-- надо добавить ссылку -->
-          <li><a href="#">По рейтингу</a></li>  <!-- надо добавить ссылку -->
-          <li class="arrow-up current">&#9650;</li>
-          <li class="arrow-down"><a href="#">&#9660;</a></li> <!-- jscript? -->
+          <li><a href="#">По рейтингу</a></li>
+            <img src="img/icon-up-dir.svg" width="15" height="15" fill="grey">
+            <img src="img/icon-down-dir.svg" width="15" height="15" fill="#81b3d2"><!-- надо добавить ссылку, убрать буллеты-->
+           <!-- jscript? -->
         </ul>
       </section>
       <section class="hotels-found">
@@ -84,47 +85,45 @@
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="booking">Забронировать</button>
             <div class="stars four-stars">
-              <ul class="stars">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li class="visually-hidden">5</li>                
-              </ul>
+              <p class="stars">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2"> 
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                                
+              </p>
             </div> <!-- Тут эти звёздочки покажутся при помощи CSS и sprite-->
             <div class="rating-score">Рейтинг: 8.5</div>
           </li>
           <li class="hotel">
             <h4 class="hotel-name">Desert Quail Inn</h4>
+            <img src="img/hotel2.jpg" width="200" height="150">
             <p class="hotel-type">Мотель</p> 
             <p class="price-range">от 3000 р.</p>
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="booking">Забронировать</button>
             <div class="stars three-stars">
-              <ul class="stars">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li class="visually-hidden">4</li>
-                <li class="visually-hidden">5</li>                
-              </ul>  
+              <p class="stars">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                  <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+              </p>  
             </div> <!-- Тут эти звёздочки при помощи CSS&sprite надо размножить в нужном кол-ве-->
             <div class="rating-score">Рейтинг: 8.9</div>
           </li>
           <li class="hotel">
             <h4 class="hotel-name">Villas at Poco Diablo</h4>
+            <img src="img/hotel3.jpg" width="200" height="150">
             <p class="hotel-type">Апартаменты</p> 
             <p class="price-range">от 2000 р.</p>
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="booking">Забронировать</button>
             <div class="stars two-stars">
-              <ul class="stars">
-                <li>1</li>
-                <li>2</li>
-                <li class="visually-hidden">3</li>
-                <li class="visually-hidden">4</li>
-                <li class="visually-hidden">5</li>                
-              </ul>
+              <p class="stars">
+                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                            
+              </p>
             </div> <!-- Тут эти звёздочки при помощи CSS&sprite надо размножить в нужном кол-ве-->
             <div class="rating-score">Рейтинг: 9.2</div>
           </li>
@@ -137,17 +136,17 @@
       <div class="footer-social">
         <b class="footer">#VISITSEDONA</b>
           <a class="social-button" href="https://twitter.com/CityofSedonaAZ">
-              <img src="img/tw.svg" width="70" height="70" alt="Твиттер" fill="#81b3d2"> </a> <!-- надо поменять все размеры с 70х70 на реальные -->
+              <img src="img/icon-tw.svg" width="70" height="70" alt="Твиттер" fill="#81b3d2"> </a> <!-- надо поменять все размеры с 70х70 на реальные -->
           <a class="social-button" href="https://www.facebook.com/CityofSedonaAZ">
-              <img src="img/fb-icon.svg" width="70" height="70" alt="Фейсбук" fill="#81b3d2"></a>
+              <img src="img/icon-fb.svg" width="70" height="70" alt="Фейсбук" fill="#81b3d2"></a>
           <a class="social-button" href="https://www.youtube.com/user/CityofSedonaAZ">
-              <img src="img/youtube.svg" width="70" height="70" alt="Youtube" fill="#81b3d2"></a>
+              <img src="img/icon-youtube.svg" width="70" height="70" alt="Youtube" fill="#81b3d2"></a>
             
                
       </div>
       <p class="footer-copyright">
         <b class="footer">WEBSITE BY</b> 
-        <a class="footer htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo_name.svg" width="70" height="70" alt="HTML Academy" fill="#111111"> </a> <!-- что-то никак не получается добавить к нему цвет -->
+        <a class="footer htmlacademy-button" href="https://htmlacademy.ru"><img src="img/logo_name.svg" width="161" height="75" alt="HTML Academy" fill="#81b3d2"> </a> <!-- что-то никак не получается добавить к нему цвет -->
       </p>
     </footer>     
   </body>

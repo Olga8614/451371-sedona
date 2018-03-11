@@ -22,6 +22,10 @@
 logo-image {
     
 }
+/*.advert {
+    stroke: #81b3d2;
+    fill: black;
+} it does not take effect */
 .with-picture {
     background-color: aquamarine;
     width: "100%";
@@ -49,15 +53,16 @@ logo-image {
     
 }
 .social-tw {
-    background: #bdc3c7 url("../img/tw.svg") no-repeat;
+    background: #bdc3c7 url("../img/icon-tw.svg") no-repeat;
 }
 .social-yt {
-    background: #bdc3c7 url("../img/youtube.svg") no-repeat;
+    background: #bdc3c7 url("../img/icon-youtube.svg") no-repeat;
 }
 .social-fb {
-    background: #bdc3c7 url("../img/fb-icon.svg") no-repeat;
+    background: #bdc3c7 url("../img/icon-fb.svg") no-repeat;
 }
 .htmlacademy-button{
+    background: #bdc3c7 url("../img/logo-name.svg") no-repeat;
     display: inline-block;
     float: left;
     width: 70px;
