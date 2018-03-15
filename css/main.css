@@ -1,26 +1,106 @@
 .body {
     background-color: beige;
+    
 }
 .checkbox, .visually-hidden {
     display: none;
     
+}
+p {
+    text-transform: uppercase;
+}
+.banner {
+    background-image: url(../img/banner-photo.jpg);
+    background-size: 100%;
+    height: 500px;
+}
+.container .banner {
+    background-image: url(../img/foto-background.jpg);
+    background-size: 100%;
+}
+.welcome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #81b3d2;
+}
+
+
+.gorgeous::after {
+    width: 256px;
+    height: 2px;
+    color: #766357;
+}
+
+.reasons-introduction {
+    display: block;
+    width: 1200px;
+    height: 216px;
+    background-color: white;
+
+}
+.banner-menu > li {
+    position: relative;
+    width: 220px;
+    display: inline-block;
+    margin-right: 4px;
+    text-transform: uppercase;
+}
+.hotel-properties, .banner-menu {
+    list-style: none;
+    color: #e3ebf2;
 }
 .hotel-types::before {
     content: "";
     height: 23px;
     width: 23px;
     display: inline-block;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.svg);    
 }
-.hotel-types:checked::before {
+.checked::before {
     content: "";
     height: 23px;
     width: 23px;
     display: inline-block;
     background-image: url(../img/checkbox-on.svg);
 }
+.breadcrumps > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*.hotel-types .checked::before {
+    content: "";
+    height: 23px;
+    width: 23px;
+    display: inline-block;
+    background-image: url(../img/checkbox-on.svg);
+}*/
+.hotel-properties {
+    display: inline;
+    margin-right: 5px;
+}
+/*.price {
+    border: 2px solid #303b40;
+}
 logo-image {
     
+}*/
+.advert {
+    display: inline-block;
+    float: left;
+    width: 76px;
+    height: 78px;
+    padding-right: 10px;
+    vertical-align: middle;
+    
+    margin: 10px;
+    
+}
+.last-date {
+    width: 120px;
+    background: url(..img/icon-calendar) no-repeat 97% 50%;
 }
 /*.advert {
     stroke: #81b3d2;
@@ -44,8 +124,8 @@ logo-image {
 .social-button {
     display: inline-block;
     float: left;
-    width: 70px;
-    height: 70px;
+    width: 46px;
+    height: 48px;
     padding-right: 10px;
     vertical-align: middle;
     background-color: #81b3d2;
@@ -62,15 +142,20 @@ logo-image {
     background: #bdc3c7 url("../img/icon-fb.svg") no-repeat;
 }
 .htmlacademy-button{
-    background: #bdc3c7 url("../img/logo-name.svg") no-repeat;
+    /*background: #bdc3c7 url("../img/logo-name.svg") no-repeat;*/
+    
     display: inline-block;
     float: left;
-    width: 70px;
-    height: 70px;
+    width: 115px;
+    height: 41px;
     padding-right: 10px;
     vertical-align: top;
     fill: #111111;
     margin: 10px;
+}
+.htmlacademy-button svg path, 
+.htmlacademy-button svg rect {
+    fill: #000;
 }
 .footer {
     display: inline-block;
