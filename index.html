@@ -3,29 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
 
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-            <img src="img/logo.png" width="106" height="40" alt="Логотип города Седоны" fill="#81b3d2">
-            
-        </a>
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li> <!-- photo.html -->
-          <li><a href="#">Карта штата</a></li> <!-- arizona_map.html -->
-          <li><a href="inner.html">Гостиницы</a></li> <!-- hotels.html -->
+          <li class="top-menu">
+            <div class="innertab">
+              <a href="info.html">Информация</a>
+            </div>
+          </li>
+          <li class="top-menu">
+            <div class="innertab">
+              <a href="photo.html">Фото и видео</a>
+            </div>
+          </li>
+          <li class="top-menu">
+            <a class="main-header-logo">
+              <img src="img/logo.png" width="106" height="40" alt="Логотип города Седоны" fill="#81b3d2">
+            </a>
+          </li>
+          <li class="top-menu">
+            <div class="innertab">
+              <a href="arizona_map.html">Карта штата</a>
+            </div>
+          </li>
+          <li class="top-menu site-navigation-current">
+            <div class="innertab">Гостиницы
+            </div>
+          </li>
         </ul>        
       </nav>
     </header>
     <main class="container">
       <section class="banner">
           <!-- Фотография гор будет background-img img/banner-photo.jpg -->
-        <p class="ban welcome">WELCOME</p>
+        <p class="ban welcome"><img src="img/welcome.png"></p>
         <p><object type="image/svg+xml" data="img/gorgeous.svg" width="200" height="50" alt="To Gorgeous">   
         </object></p>
         <p><object type="image/svg+xml" data="img/sedona.svg" width="200" height="50" alt="To Sedona">   
@@ -40,60 +57,62 @@
         
       <section class="about-sedona">
         <h2 class="visually-hidden">О Седоне</h2>
-        <ul class="reasons"> <!-- Элементы списка вместе с синим фоном и фото буду стилизовать при помощи CSS -->
+        <ul class="reasons"> 
           <li>
             <h3 class="reasons-introduction">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </li>
           <li class="with-picture">
-            <h3 class="reasons-first">Настоящий городок</h3>
-              <p>- №1 -</p>
-              <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-              <img src="img/balcony-photo.jpg" >
-                <ul class="first">
-                  <li>
-                    
-                    <img class="advert house" src="img/icon-house.svg" alt="Жильё" width="75px" height="72px"  stroke="#81b3d2">
-                      <h4 class="first">Жилье</h4>
-                    <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-                  </li>
-                  <li>
-                    
-                    <img class="advert food" src="img/icon-food.svg" alt="Еда" height="74" width="70" class="icon74x70">
-                      <h4 class="first">Еда</h4>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                  </li>
-                  <li>
-                    
-                    <img class="advert gift" src="img/icon-gift.svg" alt="Сувениры" height="74" width="70" class="icon74x70">
-                    <h4 class="first">Сувениры</h4>
-                    <p>Не только китайского, но и местного производства!</p>
-                  </li>
-                </ul>
-            </li>
-            <li class="with-picture">
-                <img src="img/foto-landscape.jpg">
-                <h3 class="reasons-second">Там есть мост дьявола</h3>
+            <p class="attraction-photo">
+              <img src="img/balcony-photo.jpg" alt="Фотография с балконом">
+              <div class="attraction-description">
+                <h3 class="reasons-first">Настоящий городок</h3>
+                <p>- №1 -</p>
+                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+            </p>  
+          </li>        
+          <li class="with-icon icon-home">
+            
+            <h4 class="first">Жилье</h4>
+            <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+          </li>
+          <li class="with-icon icon-food">
+            
+            <h4 class="first">Еда</h4>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="with-icon icon-gifts">
+            
+            <h4 class="first">Сувениры</h4>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="with-picture bridge">
+            <p class="attraction-photo">
+              <img src="img/foto-landscape.jpg" alt="Мост дьявола">
+              <div class="attraction-description">
+                <h3 class="reasons-first">Там есть мост дьявола</h3>
                 <p>- №2 -</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </li>
-            <li>
-              <h3 class="reasons-third">Небольшая площадь</h3>
-              <p>- №3 -</p>
-              <p>Все достопримечательности находятся очень близко</p>
-            </li>
-            <li>
-              <h3 class="reasons-forth">Красивая дорога</h3>
-              <p>- №4 -</p>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li>
-              <h3 class="reasons-fifth">Мало туристов</h3>
-              <p>- №5 -</p>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-        
-      </ul>
+              </div>
+            </p>
+          </li>
+          <li class="no-icon">
+            <h3 class="reasons-third">Небольшая площадь</h3>
+            <p>- №3 -</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="no-icon">
+            <h3 class="reasons-forth">Красивая дорога</h3>
+            <p>- №4 -</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="no-icon">
+            <h3 class="reasons-fifth">Мало туристов</h3>
+            <p>- №5 -</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
     </section>
     <section class="booking">
       <h2>Заинтересовались?</h2>

@@ -1,6 +1,32 @@
+/* ----- GENERAL -----*/
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
 .body {
-    background-color: beige;
-    
+  background-color: beige;
+  
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.site-navigation {
+    margin: 0;
+    padding: 0;
 }
 .checkbox, .visually-hidden {
     display: none;
@@ -9,6 +35,36 @@
 p {
     text-transform: uppercase;
 }
+/* ----- HEADER ----- */
+.top-menu {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 255);
+    text-align: center;
+    text-transform: uppercase;
+    list-style: none;
+    width: 239px;
+    min-height: 56px;
+}
+.innertab {
+    display: inline-block;
+    position: relative;
+    width: 239px;
+    min-height: 56px;
+}
+.innertab {
+    margin-left: 0;
+    padding-left: 0;
+
+}
+.top-menu a {
+    text-decoration: none;
+}
+.site-navigation > li {
+    display: inline;
+    
+}
+/* ----- INDEX BANNER ----- */
 .banner {
     background-image: url(../img/banner-photo.jpg);
     background-size: 100%;
@@ -87,7 +143,67 @@ p {
 logo-image {
     
 }*/
-.advert {
+/* ----- INDEX PAGE ADVERTICEMENT ----- */
+.reasons-introduction {
+    font-family: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 21pt;
+    color: rgba(0,0,0,255);
+    text-align: center;
+    text-transform: uppercase;
+}
+.reasons li {
+    list-style-type: none;
+
+}
+.reasons li p {
+    display: inline-block;
+    float: center;
+    font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 14pt;
+    color: rgba(51,51,51,255)
+    test-align: center;
+    width: 489px;
+}
+.with-picture {
+    font-family: PTSans-Bold, PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 21pt;
+    color: rgba(255,255,255,255);
+    text-align: center;
+    text-transform: uppercase;
+    width: 1200px;
+    min-height: 256px;
+    background-color: #81b3d2;
+    color: rgba(255,255,255,255);
+}
+.attraction-photo {
+    float: right;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+}
+.bridge .attraction-photo {
+    float: left;    
+}
+.with-icon {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    padding: 10px, 0;
+    margin: 10px, 0;
+}
+.with-icon::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    content: '';
+}
+.icon-home::before {
+    background-image: url(../img/icon-house.png);
+}
+.icon-food::before {
+    background-image: url(../img/icon-food.svg)
+}
+/*.advert {
     display: inline-block;
     float: left;
     width: 76px;
@@ -97,7 +213,7 @@ logo-image {
     
     margin: 10px;
     
-}
+}*/
 .last-date {
     width: 120px;
     background: url(..img/icon-calendar) no-repeat 97% 50%;
@@ -106,10 +222,7 @@ logo-image {
     stroke: #81b3d2;
     fill: black;
 } it does not take effect */
-.with-picture {
-    background-color: aquamarine;
-    width: "100%";
-}
+
 .share {
     width: 270px;
     margin: 0 auto;
@@ -121,6 +234,7 @@ logo-image {
 .feedback-form-group{
     padding: 10px;
 }
+/* ----- FOOTER ----- */
 .social-button {
     display: inline-block;
     float: left;
