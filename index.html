@@ -121,26 +121,26 @@
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </section>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <h5><a>Поиск гостиницы в Седоне</a></h5>
+      <div><a>Поиск гостиницы в Седоне</a></div>
       <section class="hotel-booking">
+
         <div class="feedback-form-group">
-          <label for="first-date">Дата заезда</label>
-          <input type="date" name="first-date" id="first-date">
+          <label for="first-date">Дата заезда: </label>
+          <input type="text" name="first-date" class="first-date" id="first-date">
         </div>
+
         <div class="feedback-form-group">
-          <label for="last-date">Дата выезда</label>
-          <input type="date" name="last-date" id="last-date">
+          <label for="last-date">Дата выезда: </label>
+          <input type="text" name="last-date" class="last-date" id="last-date">
         </div>
-        <div class="feedback-form-group">
-          <label for="adults">Взрослые</label>
+        <div class="feedback-form-group half-width">
+          <label for="adults">Взрослые: </label>
           <input type="number" name="adults" id="adults" min="0" max="10" value="2">
         </div>
-        <div class="feedback-form-group">
-          <label for="kids">Дети</label>
+        <div class="feedback-form-group half-width">
+          <label for="kids">Дети: </label>
           <input type="number" name="kids" id="kids" min="0" max="10">
         </div>
-
-
         <button class="hotel-search-button">Найти</button>
       </section>
     </form>
@@ -149,7 +149,7 @@
 
     </div>
        <!-- карта окрестностей Седоны, background-image при помощи CSS
-        Пока что вставила готовый автоматически сгенерированный кусок кода-->
+        -->
     
 </main>
     
@@ -158,7 +158,7 @@
       <div class="footer-social">
         <b class="footer">#VISITSEDONA</b>
           <a class="social-button" href="#">
-              <img src="img/icon-tw.svg" width="46px" height="48px" alt="Твиттер" fill="#81b3d2"> </a> <!-- надо поменять все размеры с 70х70 на реальные -->
+              <img src="img/icon-tw.svg" width="46px" height="48px" alt="Твиттер" fill="#81b3d2"> </a> 
           <a class="social-button" href="#">
               <img src="img/icon-fb.svg" width="46px" height="48px" alt="Фейсбук" fill="#81b3d2"></a>
           <a class="social-button" href="#">
