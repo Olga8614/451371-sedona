@@ -5,6 +5,14 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -24,7 +32,7 @@ html {
     margin-right: auto;
 
 }
-.site-navigation {
+.site-navigation, .about-sedona {
     margin: 0;
     padding: 0;
 }
@@ -35,7 +43,7 @@ html {
 p {
     text-transform: uppercase;
 }
-/* ----- HEADER ----- */
+/* ----------------------------------------- HEADER -------------------------------------- */
 .top-menu {
     font-family: PTSans, Arial, sans-serif;
     font-size: 14px;
@@ -45,6 +53,8 @@ p {
     list-style: none;
     width: 239px;
     min-height: 56px;
+    margin: 0;
+    padding: 0;
 }
 .innertab {
     display: inline-block;
@@ -64,21 +74,26 @@ p {
     display: inline;
     
 }
-/* ----- INDEX BANNER ----- */
-.banner {
-    background-image: url(../img/banner-photo.jpg);
-    background-size: 100%;
-    height: 500px;
-}
-.container .banner {
+/* ------------------------------------------ INDEX BANNER -------------------------------------------- */
+
+.blurry-banner {
     background-image: url(../img/foto-background.jpg);
     background-size: 100%;
 }
+.photobanner {
+    background-image: url(../img/banner-photo.jpg);
+    background-size: 100%;
+    height: 500px;
+    margin-top: -57px;
+}
+.ban {
+    text-align: center;
+
+}
 .welcome{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
     text-transform: uppercase;
     color: #81b3d2;
+    
 }
 
 
@@ -102,6 +117,107 @@ p {
     margin-right: 4px;
     text-transform: uppercase;
 }
+/* -------------------------------------------------------------------
+                    ----- FORM ----- 
+--------------------------------------------------------------------*/
+
+.booking {
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    width: 434px;
+    margin-right: auto;
+    margin-left: auto;
+}
+h2 {
+    font-size: 30pt;
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feedback-form {
+    width: 568px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feedback-form h5 {
+    display: block;
+    min-height: 86px;
+    margin: 0;
+    background-color: #766357;
+    font-size: 21pt;
+    color: #ffffff;
+    position: relative;
+}
+.feedback-form h5 a:hover {
+    background-color: #604e43;
+}
+.feedback-form h5 a:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.302);
+}
+.hotel-booking: {
+    position: relative;
+}
+.feedback-form a {
+    display: block;
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.feedback-form a:hover {
+    background: #f5f5f5;
+}
+.feedback-form > section {
+    position: relative;
+}
+.hotel-booking {
+    position: absolute;
+    /*display: none; - включить когда допилю дизайн формы; не забыть добавить тень*/
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #ffffff;
+}
+/*.feedback-form > section:hover .hotel-booking {
+    display: block;
+} включить когда будет дизайн формы*/
+.last-date {
+    width: 120px;
+    background: url(..img/icon-calendar.svg) no-repeat 97% 50%;
+}
+.share {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    padding: 10px;
+    padding-left: 20px;
+    background: #ecf0f1;
+}
+.feedback-form-group{
+    padding: 10px;
+}
+.hotel-search-button {
+    display: block;
+    width: 458px;
+    min-height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #81b3d2;
+    font-size: 21pt;
+    color: #ffffff;
+    position: relative;
+}
+/* ----- HOTELS SELECTION ----- */
 .hotel-properties, .banner-menu {
     list-style: none;
     color: #e3ebf2;
@@ -144,10 +260,20 @@ logo-image {
     
 }*/
 /* ----- INDEX PAGE ADVERTICEMENT ----- */
-.reasons-introduction {
-    font-family: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular;
+.reasons {
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    color: #111111;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.with-picture {
+    color: #ffffff;
+}
+.reasons-introduction, {
     font-size: 21pt;
-    color: rgba(0,0,0,255);
     text-align: center;
     text-transform: uppercase;
 }
@@ -158,23 +284,31 @@ logo-image {
 .reasons li p {
     display: inline-block;
     float: center;
-    font-family: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 14pt;
-    color: rgba(51,51,51,255)
     test-align: center;
     width: 489px;
 }
+.reasons-first {
+    padding-top: 50px;
+}
 .with-picture {
-    font-family: PTSans-Bold, PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-    font-size: 21pt;
-    color: rgba(255,255,255,255);
     text-align: center;
-    text-transform: uppercase;
     width: 1200px;
     min-height: 256px;
     background-color: #81b3d2;
-    color: rgba(255,255,255,255);
+    
 }
+
+
+.attr-descr {
+    /*font-family: PTSans, Arial, Helvetica, sans-serif;*/
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10pt;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 .attraction-photo {
     float: right;
     width: 800px;
@@ -184,56 +318,60 @@ logo-image {
 .bridge .attraction-photo {
     float: left;    
 }
+.with-icn {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+.no-icn {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  background-color: #eeeeee;
+}
+
 .with-icon {
     display: inline-block;
     position: relative;
     width: 400px;
-    padding: 10px, 0;
+    padding: 20px;
     margin: 10px, 0;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14pt;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 .with-icon::before {
     display: block;
-    width: 72px;
-    height: 72px;
+    width: 74px;
+    height: 76px;
     content: '';
+    margin-top: 60px;
+    
 }
 .icon-home::before {
     background-image: url(../img/icon-house.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
 }
 .icon-food::before {
-    background-image: url(../img/icon-food.svg)
-}
-/*.advert {
-    display: inline-block;
-    float: left;
-    width: 76px;
-    height: 78px;
-    padding-right: 10px;
-    vertical-align: middle;
+    background-image: url(../img/icon-food.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
     
-    margin: 10px;
-    
-}*/
-.last-date {
-    width: 120px;
-    background: url(..img/icon-calendar) no-repeat 97% 50%;
 }
-/*.advert {
-    stroke: #81b3d2;
-    fill: black;
-} it does not take effect */
+.icon-gift::before {
+    background-image: url(../img/icon-gift.png);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
-.share {
-    width: 270px;
-    margin: 0 auto;
-    margin-top: 120px;
-    padding: 10px;
-    padding-left: 20px;
-    background: #ecf0f1;
-}
-.feedback-form-group{
-    padding: 10px;
-}
 /* ----- FOOTER ----- */
 .social-button {
     display: inline-block;
@@ -246,15 +384,29 @@ logo-image {
     margin: 10px;
     
 }
-.social-tw {
+.social-button:hover {
+    background: #669ec0;
+}
+.social-button:active {
+    background: #5496bd;
+}
+/*.social-tw {
     background: #bdc3c7 url("../img/icon-tw.svg") no-repeat;
 }
+
 .social-yt {
     background: #bdc3c7 url("../img/icon-youtube.svg") no-repeat;
 }
 .social-fb {
     background: #bdc3c7 url("../img/icon-fb.svg") no-repeat;
 }
+a .social-button:hover {
+    background: #669ec0;
+}
+a .social-button:active {
+    background: #5496bd;
+}
+*/
 .htmlacademy-button{
     /*background: #bdc3c7 url("../img/logo-name.svg") no-repeat;*/
     
@@ -275,9 +427,3 @@ logo-image {
     display: inline-block;
     float: left;
 }
-
-/*.icon74x70 {
-    width: 74px;
-    height: 70px;
-    background-color: skyblue;
-} */

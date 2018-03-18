@@ -14,52 +14,47 @@
         <ul class="site-navigation">
           <li class="top-menu">
             <div class="innertab">
-              <a href="info.html">Информация</a>
+              <a href="#">Информация</a>
             </div>
           </li>
           <li class="top-menu">
             <div class="innertab">
-              <a href="photo.html">Фото и видео</a>
+              <a href="#">Фото и видео</a>
             </div>
           </li>
           <li class="top-menu">
             <a class="main-header-logo">
-              <img src="img/logo.png" width="106" height="40" alt="Логотип города Седоны" fill="#81b3d2">
+              <img src="img/logo.png" width="138" height="70" alt="Логотип города Седоны" fill="#81b3d2">
             </a>
           </li>
           <li class="top-menu">
             <div class="innertab">
-              <a href="arizona_map.html">Карта штата</a>
+              <a href="#">Карта штата</a>
             </div>
           </li>
           <li class="top-menu site-navigation-current">
-            <div class="innertab">Гостиницы
+            <div class="innertab">
+              <a href="inner.html">Гостиницы</a>
             </div>
           </li>
         </ul>        
       </nav>
     </header>
     <main class="container">
-      <section class="banner">
+      <section class="banner photobanner">
           <!-- Фотография гор будет background-img img/banner-photo.jpg -->
         <p class="ban welcome"><img src="img/welcome.png"></p>
-        <p><object type="image/svg+xml" data="img/gorgeous.svg" width="200" height="50" alt="To Gorgeous">   
-        </object></p>
-        <p><object type="image/svg+xml" data="img/sedona.svg" width="200" height="50" alt="To Sedona">   
-        </object></p>
-        <p><object type="image/svg+xml" data="img/sucks.svg" width="200" height="50" alt="Because the Grand Canyon Sucks">   
-        </object></p>
+        <p class="ban gorgeous"><img src="img/gorgeous.png"></p>
+        <p class="ban sedona"><img src="img/sedona.png"></p>
+        <p class="ban sucks"><img src="img/sucks.png"></p>
         
-          
-      
-          <!-- здесь ещё надо будет выставить размеры и цвета картинок-текстов из логотипа, и большую фотографию снизу надо обрезать, наложив белые векторные треугольники -->
       </section>
         
       <section class="about-sedona">
         <h2 class="visually-hidden">О Седоне</h2>
-        <ul class="reasons"> 
+        <section class="reasons"> 
           <li>
-            <h3 class="reasons-introduction">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+            <h3 class="reasons-first">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </li>
           <li class="with-picture">
@@ -67,86 +62,95 @@
               <img src="img/balcony-photo.jpg" alt="Фотография с балконом">
               <div class="attraction-description">
                 <h3 class="reasons-first">Настоящий городок</h3>
-                <p>- №1 -</p>
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                <p class="attr-descr">- №1 -</p>
+                <p class="attr-descr">Седона - не аттракцион для туристов,<br> там течёт своя жизнь</p>
               </div>
             </p>  
           </li>        
-          <li class="with-icon icon-home">
-            
-            <h4 class="first">Жилье</h4>
-            <p>Рекомендуем пожить в настоящем мотеле, как в кино!</p>
-          </li>
-          <li class="with-icon icon-food">
-            
-            <h4 class="first">Еда</h4>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="with-icon icon-gifts">
-            
-            <h4 class="first">Сувениры</h4>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
+          <section class="with-icn">
+            <div class="with-icon icon-home">
+
+              <h3 class="reasons-first">Жилье</h3>
+              <p class="attr-descr">Рекомендуем пожить в настоящем мотеле, как в кино!</p>
+            </div>
+
+            <div class="with-icon icon-food">
+
+              <h3 class="reasons-first">Еда</h3>
+              <p class="attr-descr">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="with-icon icon-gift">
+
+              <h3 class="reasons-first">Сувениры</h3>
+              <p class="attr-descr">Не только китайского, но и местного производства!</p>
+            </div>
+          </section>
           <li class="with-picture bridge">
             <p class="attraction-photo">
               <img src="img/foto-landscape.jpg" alt="Мост дьявола">
               <div class="attraction-description">
                 <h3 class="reasons-first">Там есть мост дьявола</h3>
-                <p>- №2 -</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="attr-descr">- №2 -</p>
+                <p class="attr-descr">Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
               </div>
             </p>
           </li>
-          <li class="no-icon">
-            <h3 class="reasons-third">Небольшая площадь</h3>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="no-icon">
-            <h3 class="reasons-forth">Красивая дорога</h3>
-            <p>- №4 -</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="no-icon">
-            <h3 class="reasons-fifth">Мало туристов</h3>
-            <p>- №5 -</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
+        
+          <section class="no-icn">
+            <div class="no-icon">
+              <h3 class="reasons-first">Небольшая площадь</h3>
+              <p class="attr-descr">- №3 -</p>
+              <p class="attr-descr">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="no-icon">
+              <h3 class="reasons-first">Красивая дорога</h3>
+              <p class="attr-descr">- №4 -</p>
+              <p class="attr-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="no-icon">
+              <h3 class="reasons-first">Мало туристов</h3>
+              <p class="attr-descr">- №5 -</p>
+              <p class="attr-descr">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </section>
+        </section>
     </section>
     <section class="booking">
       <h2>Заинтересовались?</h2>
-      <p class="booking-info">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <h5>Поиск гостиницы в Седоне</h5>
-            
-            <div class="feedback-form-group">
-                <label for="first-date">Дата заезда</label>
-                <input type="date" name="first-date" id="first-date">
-            </div>
-            <div class="feedback-form-group">
-                <label for="last-date">Дата выезда</label>
-                <input type="date" name="last-date" id="last-date">
-            </div>
-            <div class="feedback-form-group">
-                <label for="adults">Взрослые</label>
-                <input type="number" name="adults" id="adults" min="0" max="10" value="2">
-            </div>
-            <div class="feedback-form-group">
-                <label for="kids">Дети</label>
-                <input type="number" name="kids" id="kids" min="0" max="10">
-            </div>
-            
-            
-            <button>Найти</button>
-        </form>
-        
-        <div class="map">
-
+      <p class="booking-info">Укажите предполагаемые даты поездки, 
+        <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    </section>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <h5><a>Поиск гостиницы в Седоне</a></h5>
+      <section class="hotel-booking">
+        <div class="feedback-form-group">
+          <label for="first-date">Дата заезда</label>
+          <input type="date" name="first-date" id="first-date">
         </div>
+        <div class="feedback-form-group">
+          <label for="last-date">Дата выезда</label>
+          <input type="date" name="last-date" id="last-date">
+        </div>
+        <div class="feedback-form-group">
+          <label for="adults">Взрослые</label>
+          <input type="number" name="adults" id="adults" min="0" max="10" value="2">
+        </div>
+        <div class="feedback-form-group">
+          <label for="kids">Дети</label>
+          <input type="number" name="kids" id="kids" min="0" max="10">
+        </div>
+
+
+        <button class="hotel-search-button">Найти</button>
+      </section>
+    </form>
+
+    <div class="map">
+
+    </div>
        <!-- карта окрестностей Седоны, background-image при помощи CSS
         Пока что вставила готовый автоматически сгенерированный кусок кода-->
-    </section>
+    
 </main>
     
       <footer class="main-footer">
