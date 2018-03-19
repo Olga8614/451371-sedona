@@ -49,6 +49,10 @@ h3, ul {
 p {
     text-transform: uppercase;
 }
+a {
+    color: #fff;
+    text-decoration: none;
+}
 /* ----------------------------------------- HEADER -------------------------------------- */
 .top-menu {
     font-family: PTSansBold, Arial, sans-serif;
@@ -164,7 +168,7 @@ p {
     margin-right: 17px;
     
     display: inline-block;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url(../img/checkbox-off.png);
     color: #fff;    
 }
 .checked::before {
@@ -175,10 +179,32 @@ p {
     display: inline-block;
     background-image: url(../img/checkbox-on.png);
 }
+.breadcrumps {
+    display: flex;
+}
+.breadcrumps a {
+    
+    color: #000;
+
+}
 .breadcrumps > li {
     position: relative;
     display: inline-block;
     margin-right: 10px;
+    
+}
+.show-all {
+    width: 133px;
+    height: 32px;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding-top: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid #fff; 
 }
 /* -------------------------------------------------------------------
                     ----- FORM ----- 
@@ -288,7 +314,7 @@ h2 {
     text-decoration: none;
     background-color: #81b3d2;
     font-size: 21pt;
-    font-family: PTS
+    font-family: PTS;
     color: #ffffff;
     position: relative;
 }
@@ -358,7 +384,6 @@ logo-image {
 }
 .reasons li p {
     display: inline-block;
-    float: center;
     text-align: center;
     width: 489px;
 }
@@ -442,7 +467,6 @@ logo-image {
 /* ----- FOOTER ----- */
 .social-button {
     display: inline-block;
-    float: left;
     width: 46px;
     height: 48px;
     padding-right: 10px;
@@ -478,7 +502,6 @@ a .social-button:active {
     /*background: #bdc3c7 url("../img/logo-name.svg") no-repeat;*/
     
     display: inline-block;
-    float: left;
     width: 115px;
     height: 41px;
     padding-right: 10px;
@@ -498,5 +521,5 @@ a .social-button:active {
 }
 .footer {
     display: inline-block;
-    float: left;
+    
 }
