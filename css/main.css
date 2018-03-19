@@ -1,6 +1,6 @@
 /* ----- GENERAL -----*/
 @font-face {
-  font-family: "PTSans";
+  font-family: "PTSansBold";
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -24,10 +24,16 @@ html {
 .body {
   background-color: beige;
   
+  
 }
 
 .container {
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+h3, ul {
     margin-left: auto;
     margin-right: auto;
 
@@ -45,7 +51,7 @@ p {
 }
 /* ----------------------------------------- HEADER -------------------------------------- */
 .top-menu {
-    font-family: PTSans, Arial, sans-serif;
+    font-family: PTSansBold, Arial, sans-serif;
     font-size: 14px;
     color: rgba(0, 0, 0, 255);
     text-align: center;
@@ -76,13 +82,20 @@ p {
 }
 /* ------------------------------------------ INDEX BANNER -------------------------------------------- */
 
+.banner {
+    width: 1200px;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .blurry-banner {
     background-image: url(../img/foto-background.jpg);
-    background-size: 100%;
+    
+
 }
 .photobanner {
     background-image: url(../img/banner-photo.jpg);
-    background-size: 100%;
+    
     height: 500px;
     margin-top: -57px;
 }
@@ -110,12 +123,62 @@ p {
     background-color: white;
 
 }
+
+/* -------------------------------------------------------------------
+                    ----- INNER BANNER ----- 
+--------------------------------------------------------------------*/
+.banner-menu {
+    display: flex;
+}
 .banner-menu > li {
+    font-family: PTSansBold, Arial, sans-serif;
+    font-size: 16pt;
     position: relative;
     width: 220px;
     display: inline-block;
+    margin-left: 70px;
     margin-right: 4px;
     text-transform: uppercase;
+    
+}
+.banner-menu > li:nth-child(3) {
+    padding-left: 150px;
+}
+.header-menu {
+    width: 400px;
+
+}
+/* -------------------------------------------------------------------
+----------------------- HOTELS SELECTION ----- 
+-------------------------------------------------------------------*/
+.hotel-properties, .banner-menu {
+    list-style: none;
+    margin-left: -20px;
+    
+    color: #e3ebf2;
+}
+.hotel-types::before {
+    content: "";
+    height: 23px;
+    width: 23px;
+    margin-right: 17px;
+    
+    display: inline-block;
+    background-image: url(../img/checkbox-off.svg);
+    color: #fff;    
+}
+.checked::before {
+    content: "";
+    height: 23px;
+    width: 27px;
+    padding-right: 17px;
+    display: inline-block;
+    background-image: url(../img/checkbox-on.png);
+}
+.breadcrumps > li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
 }
 /* -------------------------------------------------------------------
                     ----- FORM ----- 
@@ -128,10 +191,11 @@ p {
     width: 434px;
     margin-right: auto;
     margin-left: auto;
+    box-shadow: 0, 10px, 10px, rgba(255,255,255,0.33)
 }
 h2 {
     font-size: 30pt;
-    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
     margin-right: auto;
     margin-left: auto;
 }
@@ -139,53 +203,33 @@ h2 {
     width: 568px;
     margin-right: auto;
     margin-left: auto;
+    height: 481px;
+    border: 1px solid #000;
+    box-shadow: 0, 10px, 10px, rgba(255,255,255,0.33)
 }
 .feedback-form a {
     display: block;
-    width: 586px;
     min-height: 86px;
-    margin: auto;
     background-color: #766357;
     font-size: 21pt;
     color: #ffffff;
     position: relative;
-}
-.feedback-form a:hover {
-    background-color: #604e43;
-}
-.feedback-form a:active {
-    background-color: #503e33;
-    
-}
-.hotel-booking: {
-    position: relative;
-}
-.feedback-form{
-    width: 568px;
-    height: 481px;
-    border: 1px solid #000;
-}
-.feedback-form a {
     display: block;
-    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
     font-size: 21px;
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    width: 568px;
-    min-height: 86px;
-    margin-left: auto;
     padding-top: 32px;
-    margin-right: auto;
-    position: relative;
+    
 }
 .feedback-form a:hover {
     background-color: #604e43;
 }
 .feedback-form a:active {
     background-color: #503e33;
-    color: #ffffff 30%;
+    color: rgba(255,255,255,0.33);
 }
 .feedback-form > section {
     position: relative;
@@ -198,19 +242,20 @@ h2 {
     padding: 0;
     list-style: none;
     background: #ffffff;
+    
 }
 /*.feedback-form > section:hover .hotel-booking {
     display: block;
 } включить когда будет дизайн формы*/
 .feedback-form-group {
     display: inline-block;
-    margin-right: -4px;
+    margin-right: 20px;
     width: 100%;
     text-transform: uppercase;
-    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
     font-size: 14pt;
 }
-.first-date, .last-date, .adults, .kids {
+.date, .adults, .kids {
     width: 346px;
     height: 38px;
     background-color: #f2f2f2;
@@ -230,7 +275,7 @@ h2 {
     background: #ecf0f1;
 }
 .feedback-form-group{
-    padding: 10px;
+    padding: 30px;
 }
 .hotel-search-button {
     display: block;
@@ -243,6 +288,7 @@ h2 {
     text-decoration: none;
     background-color: #81b3d2;
     font-size: 21pt;
+    font-family: PTS
     color: #ffffff;
     position: relative;
 }
@@ -254,30 +300,7 @@ h2 {
     color: #ffffff 30%;
 }
 
-/* ----- HOTELS SELECTION ----- */
-.hotel-properties, .banner-menu {
-    list-style: none;
-    color: #e3ebf2;
-}
-.hotel-types::before {
-    content: "";
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    background-image: url(../img/checkbox-off.svg);    
-}
-.checked::before {
-    content: "";
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    background-image: url(../img/checkbox-on.svg);
-}
-.breadcrumps > li {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-}
+
 
 /*.hotel-types .checked::before {
     content: "";
@@ -290,13 +313,24 @@ h2 {
     display: inline;
     margin-right: 5px;
 }
-/*.price {
-    border: 2px solid #303b40;
+table {
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    width: 314px;
+    height: 32px;
 }
+td {
+    border: 1px solid #fff;
+    width: 50%;
+    text-align: center;
+    
+}
+
+/*
 logo-image {
     
 }*/
-/* ----- INDEX PAGE ADVERTICEMENT ----- */
+/* ------------------------------------------------------ INDEX PAGE ADVERTICEMENT -------------------------- */
 .reasons {
     font-family: "PTSans", Arial, Helvetica, sans-serif;
     color: #111111;
@@ -308,6 +342,10 @@ logo-image {
 
 .with-picture {
     color: #ffffff;
+    text-align: center;
+    width: 1200px;
+    min-height: 256px;
+    background-color: #81b3d2;
 }
 .reasons-introduction, {
     font-size: 21pt;
@@ -321,21 +359,12 @@ logo-image {
 .reasons li p {
     display: inline-block;
     float: center;
-    test-align: center;
+    text-align: center;
     width: 489px;
 }
 .reasons-first {
     padding-top: 50px;
 }
-.with-picture {
-    text-align: center;
-    width: 1200px;
-    min-height: 256px;
-    background-color: #81b3d2;
-    
-}
-
-
 .attr-descr {
     /*font-family: PTSans, Arial, Helvetica, sans-serif;*/
     font-weight: normal;
@@ -351,6 +380,7 @@ logo-image {
     width: 800px;
     margin: 0;
     padding: 0;
+    margin-right: 25px;
 }
 .bridge .attraction-photo {
     float: left;    
