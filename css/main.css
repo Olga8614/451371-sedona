@@ -183,10 +183,12 @@ html {
     margin-right: 10px;
     
 }
+/*-----------------------------------------------------------------------------------------------
+-------------------------------PRICE SELECTIONNTROLS---------------------------------------------
+-------------------------------------------------------------------------------------------------*/
 .filter-range {
     display: block;
     font-weight: 400;
-    background-color: pink;
     width: 330px;
     margin: 50px auto;
     color: #ffffff;
@@ -206,20 +208,21 @@ html {
     border: 2px solid #ffffff;
     border-radius: 2px;
 }
-.price-control::after {
+.price-control::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 50%
+    left: 50%;
+    top: -25%;
+    
     width: 2px;
     height: 22px;
-    background: #fff;
+    background-color: #fff;
     transform: translate(-50%, 50%);
 }
 .price-control label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
     cursor: pointer;
     
@@ -227,16 +230,18 @@ html {
 }
 .price-control .min-price,
 .price-control .max-price {
-    width: 90px;
+    width: 155px;
     padding-left: 65px;
+    border: none;
 }
 .price-control input {
-    width: 50px;
+    width: 70px;
     margin: 0;
     color: inherit;
     font: inherit;
     background: none;
     border: none;
+    
 }
 .range-controls {
     position: relative;
@@ -244,7 +249,7 @@ html {
 }
 .range-controls .scale {
     height: 2px;
-    background: rgba(255,255,255,0.33);
+    background-color: rgba(255,255,255,0.33);
 }
 .range-controls .bar {
     width: 80%;
@@ -253,11 +258,11 @@ html {
 }
 .range-toggle {
     position: absolute;
-    top: -9px;
-    width: 4px;
-    height: 4px;
-    background: #ababab;
-    border: 8px solid #fff;
+    top: -10px;
+    width: 6px;
+    height: 6px;
+    background-color: #ababab;
+    border: 10px solid #fff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba (0,1,1,0.2);
     cursor: pointer;
