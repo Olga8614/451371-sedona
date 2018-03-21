@@ -258,14 +258,23 @@ html {
 }
 .range-toggle {
     position: absolute;
-    top: -10px;
+    top: -12px;
+    /*-moz-border-radius: 20px/20px;
+    -webkit-border-radius: 20px 20px;*/
+    border-radius: 50px/50px;
+    border: solid 10px #fff;
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    /*
+    
     width: 6px;
     height: 6px;
-    background-color: #ababab;
+    background-color: red;
     border: 10px solid #fff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba (0,1,1,0.2);
-    cursor: pointer;
+    cursor: pointer;*/
 }
 .range-toggle-min {
     left: 0;
@@ -274,7 +283,8 @@ html {
     left: 80%;
 }
 .range-toggle:hover {
-    background: #1c4f80;
+    
+    box-shadow: 0 2px 0 1px grey;
 }
 .btn-transparent {
     display: block;
