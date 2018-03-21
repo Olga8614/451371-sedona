@@ -151,6 +151,15 @@ html {
     
     color: #e3ebf2;
 }
+.banner-menu h3 {
+    font-family: PTSansBold, Arial, sans-serif;
+    font-size: 16pt; 
+}
+.hotel-types {
+    font-family: PTSans, Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    line-height: 30pt;
+}
 .hotel-types::before {
     content: "";
     height: 23px;
@@ -169,20 +178,19 @@ html {
     display: inline-block;
     background-image: url(../img/checkbox-on.png);
 }
-.breadcrumps {
-    display: flex;
+/*-----------------------------------------------------------------------------------------------
+-------------------------------   INNER BREADCRUMPS ---------------------------------------------
+-------------------------------------------------------------------------------------------------*/
+.breadcrumbs {
+   
 }
-.breadcrumps a {
-    
-    color: #000;
-
-}
-.breadcrumps > li {
-    position: relative;
+.breadcrumps p {
+    font-family: PTSans,PTSans, Arial, Helvetica, sans-serif;
     display: inline-block;
-    margin-right: 10px;
-    
+    text-transform: uppercase;
+    padding: 10px 20px;
 }
+
 /*-----------------------------------------------------------------------------------------------
 -------------------------------PRICE SELECTIONNTROLS---------------------------------------------
 -------------------------------------------------------------------------------------------------*/
@@ -194,7 +202,7 @@ html {
     color: #ffffff;
     text-transform: uppercase;
 }
-.filter-fange-title {
+.filter-range-title {
     margin-bottom: 9px;
     font-weight: 600;
     font-size: 16px;
@@ -259,22 +267,11 @@ html {
 .range-toggle {
     position: absolute;
     top: -12px;
-    /*-moz-border-radius: 20px/20px;
-    -webkit-border-radius: 20px 20px;*/
     border-radius: 50px/50px;
     border: solid 10px #fff;
     width: 30px;
     height: 30px;
     background-color: grey;
-    /*
-    
-    width: 6px;
-    height: 6px;
-    background-color: red;
-    border: 10px solid #fff;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 rgba (0,1,1,0.2);
-    cursor: pointer;*/
 }
 .range-toggle-min {
     left: 0;
@@ -282,8 +279,7 @@ html {
 .range-toggle-max {
     left: 80%;
 }
-.range-toggle:hover {
-    
+.range-toggle:hover {    
     box-shadow: 0 2px 0 1px grey;
 }
 .btn-transparent {
@@ -299,22 +295,11 @@ html {
     border-radius: 2px;
     cursor: pointer;
 }
-/*.show-all {
-    display: inline-block;
-    width: 133px;
-    height: 32px;
-    font-family: "PTSans", Arial, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    padding-top: 6px;
-    list-style: none;
-    border: 2px solid #fff; 
+.btn-transparent:hover {
+    color: #000;
+    background-color: #fff;
 }
-.show-all a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}*/
+
 /* -------------------------------------------------------------------
                     ----- FORM ----- 
 --------------------------------------------------------------------*/
@@ -435,8 +420,29 @@ h2 {
     color: #ffffff 30%;
 }
 
-
-
+input.date {
+    padding: 2px;
+    background-image: url(..img/calendar.png) right no-repeat;   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    /*background-position: 10px 10px; Позиционируем   */
+    outline: none; /*убираем стандартную обводку браузера*/   
+    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
+    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
+    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
+    height: 38px; /*высота строки ввода*/   
+    
+}
+/*.feedback-form-group input {
+    backg round-image: url(..img/calendar.png) no-repeat center right red;   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: 4px; /*Позиционируем*/   
+    outline: none; /*убираем стандартную обводку браузера*/   
+    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
+    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
+    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
+    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/ 
+}*/
 /*.hotel-types .checked::before {
     content: "";
     height: 23px;
@@ -576,29 +582,89 @@ logo-image {
 ----------------------------------- HOTEL CARDS -----
 -------------------------------------------------------------------------------------- */
 .hotels-list {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     width: 1200;
 }
 .hotel-card {
-    width: 100%;
+    display: block;
+    width: 1200px;
     height: 150px;
+    margin-left: -35px;
     border-bottom: 1px solid #e5e5e5;
     background-color: pink;
 }
-.hotel-card img {
+.hotel-card  .hotel-photo {
     display: inline-block;
+    float: left;
     width: 135px;
     height: 90px;
     margin-left: 60px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 .hotel-name {
-    display: block;
+    display: inline-block;
     list-style: none;
     position: relative;
-    left: 0px;
-    top: 0px;
+    left: 30px;
+    top: -10px;
+    text-transform: uppercase;
+    font-family: PTSansBold, Arial, sans-serif;
+    font-size: 21pt;
+}
+.hotel-type {
+    font-family: PTSanss, Arial, sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
+    position: relative;
+    top: -50px;
+    left: 30px;
+}
+.price-range{
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    top: -90px;
+    left: 380px;
+}
+.star {
+    float: right;
+    margin-left: 5px;
+}
+.stars {
+    display: block;
+    position: relative;
+    top: -130px;
+    margin-top: -90px;
+    margin-right: 72px;
+}
+.rating-score {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    position: relative;
+    width: 110px;
+    height: 25px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    top: -90px;
+    float: right;
+    margin-right: 70px;
+}
+.show-details {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    position: relative;
+    width: 110px;
+    height: 25px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    top: -90px;
+    float: left;
+    margin-left: 170px;
 }
 /* ------------------------------------------------------------------------
 ----------------------------------- FOOTER -----

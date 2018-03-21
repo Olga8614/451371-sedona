@@ -41,6 +41,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <section class="banner blurry-banner">
 
@@ -84,7 +85,7 @@
           </li>
           <li class="banner-column">
           <div class="filter-range">
-            <div class="filter-fange-title">Стоимость в сутки (р)</div>
+            <div class="filter-range-title">Стоимость в сутки (р)</div>
             <div class="price-control">
               <label class="min-price"><input type="text" name="min-price" value="от 0"></label>
               <label class="max-price"><input type="text" name="max-price" value="до 3000"></label>
@@ -99,93 +100,75 @@
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
           </li>
-          <!-- <li class="banner-column price-for-night">
-            <h3 class="header-menu">Стоимость в сутки (р)</h3>
-            <table style="price">
-              <tr>
-                <td>от 0</td>
-                <td>до 3000</td>
-              </tr>
-            </table>
-            <svg class="priceslider">
-              <rect class="priceslider-active" width="317px" height="2px" x="0" y="20" fill=#ababab></rect>
-              <rect class="priceslider-inactive" width="248px" height="2px" x="0" y="20" fill=#ffffff></rect>
-              <circle class="first-mark" r="10px" cx="10" cy="20" fill=#ffffff></circle>
-              <circle class="second-mark" r="10px" cx="248" cy="20" fill=#ffffff></circle>
-              <circle class="first-mark-inner" r="2px" cx="10" cy="20" fill=#ababab></circle>
-              <circle class="second-mark-inner" r="2px" cx="248" cy="20" fill=#ababab></circle>
-
-            </svg>
-            <p class="show-all"><a href=#>Показать</a></p>
-          </li> -->
+          
         </ul>
         
       </section>
 
       <section class="search-results-header">
-        <ul class="breadcrumps">
-          <li class="hotels-returned">Найдено: 3</li>
+        <div class="breadcrumps">
+          <p class="hotels-returned">Найдено: 3</p>
 
           <!-- как подставлять результаты поиска? -->
-          <li class="sorting-type">Сортировка:</li>
-          <li class="breadcrumps-current">По цене</li>
-          <li><a href="#">По типу</a></li>
+          <p class="sorting-type">Сортировка:</p>
+          <p class="breadcrumps-current">По цене</p>
+          <p><a href="#">По типу</a></p>
           <!-- надо добавить ссылку -->
-          <li><a href="#">По рейтингу</a></li>
+          <p><a href="#">По рейтингу</a></p>
           <img src="img/icon-up-dir.svg" width="15" height="15" fill="grey">
           <img src="img/icon-down-dir.svg" width="15" height="15" fill="#81b3d2">
           <!-- надо добавить ссылку, убрать буллеты-->
           <!-- треугольнички - ссыдка? -->
-        </ul>
+        </div>
       </section>
       <section class="hotels-found">
         <ul class="hotels-list">
           <li class="hotel-card">
+            <img class="hotel-photo" src="img/hotel1.jpg" width="200" height="150" alt="Amara">
             <h4 class="hotel-name">Amara Resort &amp; Spa</h4>
-            <img src="img/hotel1.jpg" width="200" height="150" alt="Amara">
             <p class="hotel-type">Гостиница</p>
-            <!-- как-то надо их из БД вытаскивать?-->
             <p class="price-range">от 4000 р.</p>
+
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="book-me">Забронировать</button>
             <div class="stars four-stars">
-              <p class="stars">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+              <p class="few-stars">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
 
               </p>
             </div>
             <div class="rating-score">Рейтинг: 8.5</div>
           </li>
           <li class="hotel-card">
+            <img class="hotel-photo" src="img/hotel2.jpg" width="200" height="150" alt="Quail">
             <h4 class="hotel-name">Desert Quail Inn</h4>
-            <img src="img/hotel2.jpg" width="200" height="150" alt="Quail">
             <p class="hotel-type">Мотель</p>
             <p class="price-range">от 3000 р.</p>
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="book-me">Забронировать</button>
             <div class="stars three-stars">
-              <p class="stars">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+              <p class="few-stars">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
               </p>
             </div>
             <div class="rating-score">Рейтинг: 8.9</div>
           </li>
           <li class="hotel-card">
+            <img class="hotel-photo" src="img/hotel3.jpg" width="200" height="150" alt="Diablo">
             <h4 class="hotel-name">Villas at Poco Diablo</h4>
-            <img src="img/hotel3.jpg" width="200" height="150" alt="Diablo">
             <p class="hotel-type">Апартаменты</p>
             <p class="price-range">от 2000 р.</p>
             <button type="button" class="show-details">Подробнее</button>
             <button type="button" class="book-me">Забронировать</button>
             <div class="stars two-stars">
-              <p class="stars">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
-                <img src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+              <p class="few-stars">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
+                <img class="star" src="img/icon-star.svg" width="15" height="15" fill="#81b3d2">
 
               </p>
             </div>
