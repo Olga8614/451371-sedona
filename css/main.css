@@ -581,20 +581,16 @@ logo-image {
 /* ------------------------------------------------------------------------
 ----------------------------------- HOTEL CARDS -----
 -------------------------------------------------------------------------------------- */
-.hotels-list {
-    display: inline-block;
-    width: 1200;
-}
+
 .hotel-card {
     display: block;
     width: 1200px;
     height: 150px;
     margin-left: -35px;
     border-bottom: 1px solid #e5e5e5;
-    background-color: pink;
 }
 .hotel-card  .hotel-photo {
-    display: inline-block;
+    display: block;
     float: left;
     width: 135px;
     height: 90px;
@@ -602,8 +598,14 @@ logo-image {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.hotel-card-info {
+    display: block;
+    position: relative;
+    width: 995px;
+    height: 150px;
+    float: right;
+}
 .hotel-name {
-    display: inline-block;
     list-style: none;
     position: relative;
     left: 30px;
@@ -635,40 +637,63 @@ logo-image {
 }
 .stars {
     display: block;
-    position: relative;
-    top: -130px;
-    margin-top: -90px;
-    margin-right: 72px;
+    position: absolute;
+    top: 30px;
+    right: 75px;
+}
+.rating-score, .show-details, .book-me {
+    font-family: PTSans, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    position: absolute;
+    top: 95px;
+    padding: 5px 15px;
+}
+
+.show-details {
+    color: #fff;
+    width: 110px;
+    height: 25px;
+    background-color: #81b3d2;
+    left: 30px;
+}
+.show-details:hover {
+    background-color: #669ec0;
+}
+.show-details:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.33);
+}
+.book-me {
+    color: #fff;
+    width: 145px;
+    height: 25px;
+    background-color: #766357;
+    left: 250px;
+}
+.book-me:hover {
+    background-color: #604e43;
+}
+.book-me:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.33)
 }
 .rating-score {
-    font-family: PTSans, Arial, sans-serif;
-    font-size: 10pt;
-    text-transform: uppercase;
-    position: relative;
     width: 110px;
     height: 25px;
-    padding: 5px 10px;
     background-color: #f2f2f2;
-    top: -90px;
-    float: right;
-    margin-right: 70px;
-}
-.show-details {
-    font-family: PTSans, Arial, sans-serif;
-    font-size: 10pt;
-    text-transform: uppercase;
-    position: relative;
-    width: 110px;
-    height: 25px;
-    padding: 5px 10px;
-    background-color: #f2f2f2;
-    top: -90px;
-    float: left;
-    margin-left: 170px;
+    right: 75px;
 }
 /* ------------------------------------------------------------------------
 ----------------------------------- FOOTER -----
 -------------------------------------------------------------------------------------- */
+.main-footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+}
 .social-button {
     display: inline-block;
     width: 46px;
@@ -723,7 +748,4 @@ a .social-button:active {
 .htmlacademy-button svg rect {
     fill: #000;
 }
-.footer {
-    display: inline-block;
-    
-}
+
