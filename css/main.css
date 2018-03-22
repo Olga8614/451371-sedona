@@ -26,6 +26,24 @@ html {
   
   
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
 
 .container {
     width: 1200px;
@@ -45,8 +63,7 @@ html {
 
 /* ----------------------------------------- HEADER -------------------------------------- */
 .top-menu {
-    font-family: PTSansBold, Arial, sans-serif;
-    font-size: 14px;
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
     color: rgba(0, 0, 0, 255);
     text-align: center;
     text-transform: uppercase;
@@ -56,19 +73,22 @@ html {
     margin: 0;
     padding: 0;
 }
-.innertab {
-    display: inline-block;
-    position: relative;
-    width: 239px;
-    min-height: 56px;
-}
-.innertab {
-    margin-left: 0;
-    padding-left: 0;
 
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
 }
 .top-menu a {
     text-decoration: none;
+    color: #000;
+    font-size: 14pt;
+    display: block;
+    padding: 20px 20px;
+    vertical-align: middle;
+}
+.main-header-logo {
+    margin-top: -25px;
 }
 .site-navigation > li {
     display: inline;
@@ -125,7 +145,7 @@ html {
     display: flex;
 }
 .banner-menu > li {
-    font-family: PTSansBold, Arial, sans-serif;
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 16pt;
     position: relative;
     width: 220px;
@@ -152,7 +172,7 @@ html {
     color: #e3ebf2;
 }
 .banner-menu h3 {
-    font-family: PTSansBold, Arial, sans-serif;
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 16pt; 
 }
 .hotel-types {
@@ -185,14 +205,14 @@ html {
    
 }
 .breadcrumps p {
-    font-family: PTSans,PTSans, Arial, Helvetica, sans-serif;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     display: inline-block;
     text-transform: uppercase;
     padding: 10px 20px;
 }
 
 /*-----------------------------------------------------------------------------------------------
--------------------------------PRICE SELECTIONNTROLS---------------------------------------------
+-------------------------------PRICE SELECTION CONTROLS---------------------------------------------
 -------------------------------------------------------------------------------------------------*/
 .filter-range {
     display: block;
@@ -299,7 +319,28 @@ html {
     color: #000;
     background-color: #fff;
 }
-
+.hotel-properties {
+    display: inline;
+    margin-right: 5px;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    width: 314px;
+    height: 32px;
+}
+td {
+    border: 1px solid #fff;
+    width: 50%;
+    text-align: center;
+    
+}
+/*----------------------------------------------------------------------------------------
+CHECKMARKS ON HOVER--
+----------------------------------------------------------------------------------------*/
+.checked a:hover {
+    color: red;
+}
 /* -------------------------------------------------------------------
                     ----- FORM ----- 
 --------------------------------------------------------------------*/
@@ -311,7 +352,6 @@ html {
     width: 434px;
     margin-right: auto;
     margin-left: auto;
-    box-shadow: 0, 10px, 10px, rgba(255,255,255,0.33)
 }
 h2 {
     font-size: 30pt;
@@ -324,8 +364,7 @@ h2 {
     margin-right: auto;
     margin-left: auto;
     height: 481px;
-    border: 1px solid #000;
-    box-shadow: 0, 10px, 10px, rgba(255,255,255,0.33)
+    /*border: 1px solid #000;*/
 }
 .feedback-form a {
     display: block;
@@ -356,24 +395,41 @@ h2 {
 }
 .hotel-booking {
     position: absolute;
-    /*display: none; - включить когда допилю дизайн формы; не забыть добавить тень*/
+     
     z-index: 10;
     margin: 0;
     padding: 0;
     list-style: none;
     background: #ffffff;
+    border: 1px solid red;
     
 }
 /*.feedback-form > section:hover .hotel-booking {
     display: block;
 } включить когда будет дизайн формы*/
-.feedback-form-group {
-    display: inline-block;
-    margin-right: 20px;
-    width: 100%;
+.feedback-form-group label {
+    font-family: "PTSansBold", Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+.feedback-form-group input{
+    position: relative;
+    padding-right: 46px;
+    float: right;
+    margin-right: 50px;
+    width: 300px;
     text-transform: uppercase;
     font-family: "PTSans", Arial, Helvetica, sans-serif;
     font-size: 14pt;
+}
+.feedback-form-group .date::after {
+    content: "";
+    width: 210px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: red;
 }
 .date, .adults, .kids {
     width: 346px;
@@ -420,57 +476,7 @@ h2 {
     color: #ffffff 30%;
 }
 
-input.date {
-    padding: 2px;
-    background-image: url(..img/calendar.png) right no-repeat;   
-    background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    /*background-position: 10px 10px; Позиционируем   */
-    outline: none; /*убираем стандартную обводку браузера*/   
-    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
-    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
-    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
-    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/  
-    height: 38px; /*высота строки ввода*/   
-    
-}
-/*.feedback-form-group input {
-    backg round-image: url(..img/calendar.png) no-repeat center right red;   
-    background-repeat: no-repeat; /*Убираем повтор изображения*/   
-    background-position: 4px; /*Позиционируем*/   
-    outline: none; /*убираем стандартную обводку браузера*/   
-    -moz-border-radius: 5px; /*закругляем углы для Mozilla*/  
-    -webkit-border-radius: 5px; /*закругляем углы для Chrome, Safari*/   
-    border-radius: 5px; /*закругляем углы для остальных браузеров*/  
-    padding-left: 20px; /*отступ слева от ввода, чтобы текст не был на картинке(выбирать по размеру картинки)*/ 
-}*/
-/*.hotel-types .checked::before {
-    content: "";
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    background-image: url(../img/checkbox-on.svg);
-}*/
-.hotel-properties {
-    display: inline;
-    margin-right: 5px;
-}
-table {
-    border-collapse: collapse;
-    border: 1px solid #fff;
-    width: 314px;
-    height: 32px;
-}
-td {
-    border: 1px solid #fff;
-    width: 50%;
-    text-align: center;
-    
-}
 
-/*
-logo-image {
-    
-}*/
 /* ------------------------------------------------------ INDEX PAGE ADVERTICEMENT -------------------------- */
 .reasons {
     font-family: "PTSans", Arial, Helvetica, sans-serif;
@@ -485,7 +491,7 @@ logo-image {
     color: #ffffff;
     text-align: center;
     width: 1200px;
-    min-height: 256px;
+    height: 256px;
     background-color: #81b3d2;
 }
 .reasons-introduction, {
@@ -521,6 +527,9 @@ logo-image {
     margin: 0;
     padding: 0;
     margin-right: 25px;
+}
+.attraction-photo img {
+    vertical-align: 50%;
 }
 .bridge .attraction-photo {
     float: left;    
@@ -611,11 +620,11 @@ logo-image {
     left: 30px;
     top: -10px;
     text-transform: uppercase;
-    font-family: PTSansBold, Arial, sans-serif;
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 21pt;
 }
 .hotel-type {
-    font-family: PTSanss, Arial, sans-serif;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     font-size: 14pt;
     text-transform: uppercase;
     position: relative;
@@ -623,7 +632,7 @@ logo-image {
     left: 30px;
 }
 .price-range{
-    font-family: PTSans, Arial, sans-serif;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     font-size: 14pt;
     text-transform: uppercase;
     display: block;
@@ -642,7 +651,7 @@ logo-image {
     right: 75px;
 }
 .rating-score, .show-details, .book-me {
-    font-family: PTSans, Arial, sans-serif;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     font-size: 10pt;
     text-transform: uppercase;
     position: absolute;
@@ -710,23 +719,7 @@ logo-image {
 .social-button:active {
     background: #5496bd;
 }
-/*.social-tw {
-    background: #bdc3c7 url("../img/icon-tw.svg") no-repeat;
-}
 
-.social-yt {
-    background: #bdc3c7 url("../img/icon-youtube.svg") no-repeat;
-}
-.social-fb {
-    background: #bdc3c7 url("../img/icon-fb.svg") no-repeat;
-}
-a .social-button:hover {
-    background: #669ec0;
-}
-a .social-button:active {
-    background: #5496bd;
-}
-*/
 .htmlacademy-button{
     /*background: #bdc3c7 url("../img/logo-name.svg") no-repeat;*/
     
