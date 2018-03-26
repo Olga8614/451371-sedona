@@ -85,6 +85,7 @@ input[type="radio"].visually-hidden {
     display: block;
     text-decoration: none;
     color: #000;
+    background-color: #fff;
     font-size: 14px;
     display: block;
     padding: 20px 20px;
@@ -115,23 +116,36 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/banner-photo.jpg);
     
     height: 500px;
-    margin-top: -57px;
+    margin-top: -85px;
 }
 .ban {
     text-align: center;
 
 }
-.welcome{
-    text-transform: uppercase;
-    color: #81b3d2;
-    
+.welcome img {
+    /* position: absolute; */
+    margin-top: 135px;
+    text-align: center;
 }
 
-
-.gorgeous::after {
+.gorgeous {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
     width: 256px;
-    height: 2px;
-    color: #766357;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-right: 250px;
+
+}
+.gorgeous::after {
+    box-sizing: border-box;
+    content: "";
+    width: 100px;
+    height: 20px;
+    color: red;
+    padding-left: 20px;
 }
 
 .reasons-introduction {
@@ -544,7 +558,7 @@ h2 {
 .reasons li p {
     display: inline-block;
     text-align: center;
-    width: 489px;
+    /* width: 489px; */
 }
 .reasons-first {
     padding-top: 50px;
@@ -561,13 +575,20 @@ h2 {
 
 .attraction-photo {
     float: right;
-    width: 800px;
     margin: 0;
     padding: 0;
-    margin-right: 25px;
+    /* margin-right: 25px; */
+    width: 800px;
+    height: 256px;
+    background-size: cover;
+
+
 }
 .attraction-photo img {
     vertical-align: 50%;
+    width: 800px;
+    height: 256px;
+    vertical-align: middle;
 }
 .bridge .attraction-photo {
     float: left;    
@@ -735,55 +756,80 @@ h2 {
 ----------------------------------- FOOTER -----
 -------------------------------------------------------------------------------------- */
 .main-footer {
+    display: flex;
+    flex-wrap: wrap;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     justify-content: space-around;
+    list-style: none;
+
+}
+.main-footer li {
+    display: inline;
+}
+.footer-visitsedona, .footer-social, .footer-copyright {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.footer-social a {
+    width: 46px;
+    height: 48px;
+    padding: 12px;
+}
+.footer-social a:nth-child(1) {
+    padding: 14px 15px;
+}
+.footer-social a:nth-child(2) {
+    padding: 13px 17px;
+}
+.footer-social a:nth-child(3) {
+    padding: 15px 13px;
 }
 .social-button {
     display: inline-block;
-    width: 46px;
-    height: 48px;
-    padding-right: 10px;
-    vertical-align: middle;
     background-color: #81b3d2;
-    margin: 10px;
-    
-}
-.social-button img {
-    position: relative;
-    left: 50%;
-    top: 50%;
-}
-.social-button:hover {
-    background: #669ec0;
-}
-.social-button:active {
-    background: #5496bd;
-    transparency: 30%;
+    margin: 3px;
+    vertical-align: middle;
 }
 
-.htmlacademy-button{
-    /*background: #bdc3c7 url("../img/logo-name.svg") no-repeat;*/
+
+.social-button:hover {
+    background-color: #669ec0;
     
+}
+.social-button:active {
+    background-color: #5496bd;    
+}
+img.animate1:active {
+    filter: alpha (Opacity=30);/* прозрачность для IE */
+    opacity: 0.3;/* прозрачность для других браузеров */
+
+}
+.website-by {
+    display: inline-block;
+    margin-top: 10px;
+    padding-right: 3px;
+    font-family: "PTSans", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.htmlacademy-button{    
     display: inline-block;
     width: 115px;
     height: 41px;
     padding-right: 10px;
     vertical-align: top;
     fill: #111111;
-    margin: 10px;
 }
 .htmlacademy-button:hover svg {
     fill: #81b3d2;
 }
-.htmlacademy-button:active {
+.htmlacademy-button:active svg {
     fill: #bdbbbc;
 
 }
-.htmlacademy-button svg 
- {
+.htmlacademy-button svg {
     fill: #000;
 }
 
