@@ -71,9 +71,24 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     list-style: none;
     width: 239px;
-    min-height: 56px;
+    min-height: 50px;
     margin: 0;
     padding: 0;
+    background-color: #fff;
+
+}
+.main-navigation {
+    background-color: #fff;
+    height: 50px;
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+.sedona-logo {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -75px;
+    z-index: 1;
 }
 
 .site-navigation {
@@ -82,21 +97,20 @@ input[type="radio"].visually-hidden {
     width: 1200px;
 }
 .top-menu a {
-    display: block;
     text-decoration: none;
     color: #000;
-    background-color: #fff;
     font-size: 14px;
     display: block;
-    padding: 20px 20px;
+    padding: 20px 15px;
 }
+.top-menu:nth-child(3) {
+    margin-left: 243px;
+}
+
 .main-header-logo {
     margin-top: -25px;
 }
-.site-navigation > li {
-    display: inline;
-    
-}
+
 /* ------------------------------------------ INDEX BANNER -------------------------------------------- */
 
 .banner {
@@ -114,9 +128,11 @@ input[type="radio"].visually-hidden {
 }
 .photobanner {
     background-image: url(../img/banner-photo.jpg);
-    
-    height: 500px;
+    display: flex;
+    flex-direction: column;
     margin-top: -85px;
+    clip-path: polygon(0 95px, 1200px 95px, 1200px 535px, 950px 560px, 950px 535px, 600px 590px, 250px 535px, 250px 560px,
+    0 535px);
 }
 .ban {
     text-align: center;
@@ -125,29 +141,45 @@ input[type="radio"].visually-hidden {
 .welcome img {
     /* position: absolute; */
     margin-top: 135px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.gorgeous {
-    display: flex;
+.gorgeous img {
     box-sizing: border-box;
     align-items: center;
-    width: 256px;
+    width: 176px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding-right: 250px;
+    
 
 }
-.gorgeous::after {
-    box-sizing: border-box;
+.gorgeous {
+    display: flex;
+    align-items: center;
+    margin: 0 472px;
+    width: 252px;
+}
+p.ban.gorgeous::after, 
+p.ban.gorgeous:before {
+    
     content: "";
-    width: 100px;
-    height: 20px;
-    color: red;
-    padding-left: 20px;
+    width: 30px;
+    height: 2px;
+    background-color: #766357;
+    /* border: 1px solid #766357; */
+    flex-grow: 1;
+    flex-shrink: 0;
 }
-
+.gorgeous:before {
+    margin-right: 10px;
+}
+.gorgeous:after {
+    margin-left: 10px;
+}
+.sedona {
+    margin-top: 50px;
+    margin-bottom: 55px;
+}
 .reasons-introduction {
     display: block;
     width: 1200px;
@@ -371,6 +403,11 @@ CHECKMARKS ON HOVER--
     margin-right: auto;
     margin-left: auto;
 }
+.booking-info {
+    font-size: 11px;
+    margin-bottom: 40px;
+}
+
 h2 {
     font-size: 30px;
     font-family: "PTSans", Arial, Helvetica, sans-serif;
@@ -432,7 +469,7 @@ h2 {
 }
 .feedback-form-group input{
     position: relative;
-    padding-right: 46px;
+    /* padding-right: 46px; */
     width: 300px;
     height: 38px;
     background-color: #f2f2f2;
@@ -480,14 +517,16 @@ h2 {
 }
 .adults, .kids {
     width: 84px;
+    text-align: center;
+    padding: 0 20px;
 }
-.people::before,
+.half-width input::before,
 .people::after {
-    content: "+";
+    content: "";
     display: inline-block;
     position: absolute;
-    top: 1;
-    right: 1;
+    /* top: 2;
+    right: 1; */
     width: 12px;
     height: 3px;
     margin-left: -25px;
@@ -511,12 +550,12 @@ h2 {
     min-height: 58px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -1px;
+    margin-bottom: 50px;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #81b3d2;
     font-size: 21px;
-    font-family: PTS;
+    font-family: PTSans, Arial, Helvetica, sans-serif;
     color: #ffffff;
     position: relative;
 }
@@ -574,24 +613,22 @@ h2 {
 }
 
 .attraction-photo {
-    float: right;
     margin: 0;
     padding: 0;
-    /* margin-right: 25px; */
     width: 800px;
     height: 256px;
     background-size: cover;
-
-
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
-.attraction-photo img {
-    vertical-align: 50%;
-    width: 800px;
-    height: 256px;
-    vertical-align: middle;
+.city .attraction-photo {
+    float: right;
+    background-image: url("../img/balcony-photo.jpg");
 }
-.bridge .attraction-photo {
-    float: left;    
+ 
+.landscape .attraction-photo {
+    float: left;
+    background-image: url("../img/foto-landscape.jpg");    
 }
 .with-icn {
   display: flex;
@@ -623,8 +660,15 @@ h2 {
     width: 74px;
     height: 76px;
     content: '';
-    margin-top: 60px;
+    margin-top: 40px;
     
+}
+.with-icn .reasons-first,
+.no-icn .reasons-first {
+    padding-top: 10px;
+}
+.no-icon {
+    margin-bottom: 40px;
 }
 .icon-home::before {
     background-image: url(../img/icon-house.png);
