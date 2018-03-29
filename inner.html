@@ -47,25 +47,17 @@
             <form action="" method="post">
               <ul class="hotel-properties">
                 <li>
-                  <label class="hotel-types checked" for="swimmingpool"><a><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px"
-	 height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23" xml:space="preserve">
-<g id="Layer_1">
-</g>
-<g id="Layer_2">
-	<g>
-		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
-	</g>
-</g>
-</svg>Бассейн</a></label>
-                  <input class="checkbox" type="checkbox" id="swimmingpool" name="swimingpool" value="1" checked />
+                  <input class="hotel-property" type="checkbox" id="swimmingpool" name="swimingpool" value="1" checked />
+                  <label class="hotel-types" for="swimmingpool">Бассейн</label>
+
                 </li>
-                <li><label class="hotel-types" for="parking"><a>Парковка</a></label>
-                  <input class="checkbox" type="checkbox" id="parking" name="parking" value="2" unchecked />
+                <li>
+                  <input class="hotel-property" type="checkbox" id="parking" name="parking" value="2" unchecked />
+                  <label class="hotel-types" for="parking">Парковка</label>
                 </li>
-                <li><label class="hotel-types" for="wifi"><a>Wi-Fi</a></label>
-                  <input class="checkbox" type="checkbox" id="wifi" name="wifi" value="3" unchecked />
+                <li>
+                  <input class="hotel-property" type="checkbox" id="wifi" name="wifi" value="3" unchecked />
+                  <label class="hotel-types" for="wifi">Wi-Fi</label>
                 </li>
 
               </ul>
@@ -77,14 +69,17 @@
             <form action="" method="post">
               <ul class="hotel-properties">
                 <li>
-                  <label class="hotel-types checked" for="hotel"><a>Гостиница</a></label>
-                  <input class="checkbox" type="checkbox" id="hotel" name="hotel" value="4" checked />
+                  
+                  <input class="hotel-property" type="checkbox" id="hotel" name="hotel" value="4" checked />
+                  <label class="hotel-types" for="hotel">Гостиница</label>
                 </li>
-                <li><label class="hotel-types checked" for="motel"><a>Мотель</a></label>
-                  <input class="checkbox" type="checkbox" id="motel" name="motel" value="5" unchecked />
+                <li>
+                  <input class="hotel-property" type="checkbox" id="motel" name="motel" value="5" checked />
+                  <label class="hotel-types" for="motel">Мотель</label>
                 </li>
-                <li><label class="hotel-types checked" for="apartments"><a>Апартаменты</a></label>
-                  <input class="checkbox" type="checkbox" id="apartments" name="apartments" value="6" unchecked />
+                <li>
+                  <input class="hotel-property" type="checkbox" id="apartments" name="apartments" value="6"  checked />
+                  <label class="hotel-types" for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </form>
@@ -118,11 +113,11 @@
           <!-- как подставлять результаты поиска? -->
           <p class="sorting-type">Сортировка:</p>
           <p class="breadcrumps-current">По цене</p>
-          <p><a href="#">По типу</a></p>
+          <p class="sort-type"><a href="#">По типу</a></p>
           <!-- надо добавить ссылку -->
-          <p><a href="#">По рейтингу</a></p>
-          <img src="img/icon-up-dir.svg" width="15" height="15" fill="grey">
-          <img src="img/icon-down-dir.svg" width="15" height="15" fill="#81b3d2">
+          <p class="sort-type"><a href="#">По рейтингу</a></p>
+          <a href="#"><img class="triangle-up" src="img/icon-up-dir.svg" width="15" height="15" fill="grey" alt="По возрастанию"></a>
+          <a href="#"><img class="triangle-down" src="img/icon-down-dir.svg" width="15" height="15" fill="#81b3d2" alt="По убыванию"></a>
           <!-- надо добавить ссылку, убрать буллеты-->
           <!-- треугольнички - ссыдка? -->
         </div>

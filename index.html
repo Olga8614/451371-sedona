@@ -118,35 +118,40 @@
       <p class="booking-info">Укажите предполагаемые даты поездки, 
         <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     </div>
+
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <div><a>Поиск гостиницы в Седоне</a></div>
-<section class="hotel-booking">
-  <h2 class="visually-hidden">Поиск гостиницы</h2>
-
-  <div class="feedback-form-group">
-    <label class="date" for="first-date">Дата заезда:
-      <input type="text" name="first-date" class="date" id="first-date" placeholder="24 апреля 2017">
-    </label>
-
-  </div>
-
-  <div class="feedback-form-group">
-    <label class="date" for="last-date">Дата выезда:
-      <input type="text" name="last-date" id="last-date" placeholder="4 июля 2017">
-    </label>
-
-  </div>
-  <div class="feedback-form-group half-width">
-    <label class="people" for="adults">Взрослые: <input type="number" name="adults" id="adults" min="0" max="10" value="2"></label>
+      <div>
+        <a>Поиск гостиницы в Седоне</a>
+      </div>
+      <section class="hotel-booking">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
     
-  </div>
-  <div class="feedback-form-group half-width">
-    <label class="people" for="kids">Дети: <input type="number" name="kids" id="kids" min="0" max="10" value="0"></label>
+        <div class="feedback-form-group">
+          <label class="dates" for="first-date">Дата заезда:
+            <input type="text" name="first-date" class="date" id="first-date" placeholder="24 апреля 2017">
+          </label>
     
-  </div>
-  <button class="hotel-search-button">Найти</button>
-</section>
+        </div>
+    
+        <div class="feedback-form-group">
+          <label class="dates" for="last-date">Дата выезда:
+            <input type="text" name="last-date" class="date" id="last-date" placeholder="4 июля 2017">
+          </label>
+    
+        </div>
+        <div class="feedback-form-group half-width">
 
+          <label class="people ad" for="adults">Взрослые:
+            <span class="input-persons"><input type="text" name="adults" id="adults" value="2"></span>
+          </label>
+          <label class="people kd" for="kids">Дети:
+              <span class="input-persons"><input type="text" name="kids" id="kids" value="0"></span>
+          </label>
+    
+        </div>
+        <button class="hotel-search-button">Найти</button>
+      </section>
+    
     </form>
 
     <div class="map">
