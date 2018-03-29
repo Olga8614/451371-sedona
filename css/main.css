@@ -661,6 +661,12 @@ h2 {
     text-align: center;
     
 }
+.reasons h3 {
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 .with-picture {
     color: #ffffff;
@@ -668,6 +674,9 @@ h2 {
     width: 1200px;
     height: 256px;
     background-color: #81b3d2;
+}
+.with-picture h3 {
+    width: 155px;
 }
 .reasons-introduction, {
     font-size: 21px;
@@ -679,12 +688,27 @@ h2 {
 
 }
 .reasons li p {
+    font-family: PTSans, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
     display: inline-block;
     text-align: center;
     /* width: 489px; */
 }
-.reasons-first {
+.reasons > li p {
+    margin-bottom: 10px;
+    padding-bottom: 45px;
+
+}
+.attraction-description {
     padding-top: 50px;
+}
+.reasons li:first-child {
+    width: 600px;
+    padding-top: 25px;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 .attr-descr {
     /*font-family: PTSans, Arial, Helvetica, sans-serif;*/
