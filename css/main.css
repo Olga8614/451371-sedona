@@ -188,13 +188,7 @@ p.ban.gorgeous:before {
     margin-top: 50px;
     margin-bottom: 35px;
 }
-.reasons-introduction {
-    display: block;
-    width: 1200px;
-    height: 216px;
-    background-color: white;
 
-}
 
 /* -------------------------------------------------------------------
                     ----- INNER BANNER ----- 
@@ -659,13 +653,26 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    
+    list-style: none;
+    padding: 0;
+}
+.reasons li {
+    list-style-type: none;
 }
 .reasons h3 {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 40px;
+}
+.reasons-introduction {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .with-picture {
@@ -676,17 +683,12 @@ h2 {
     background-color: #81b3d2;
 }
 .with-picture h3 {
-    width: 155px;
+    width: 200px;
 }
-.reasons-introduction, {
-    font-size: 21px;
-    text-align: center;
-    text-transform: uppercase;
+.reasons-description {
+    margin-top: 20px;
 }
-.reasons li {
-    list-style-type: none;
 
-}
 .reasons li p {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
@@ -694,22 +696,9 @@ h2 {
     font-size: 14px;
     display: inline-block;
     text-align: center;
-    /* width: 489px; */
 }
-.reasons > li p {
-    margin-bottom: 10px;
-    padding-bottom: 45px;
 
-}
-.attraction-description {
-    padding-top: 50px;
-}
-.reasons li:first-child {
-    width: 600px;
-    padding-top: 25px;
-    margin-right: 300px;
-    margin-left: 300px;
-}
+
 .attr-descr {
     /*font-family: PTSans, Arial, Helvetica, sans-serif;*/
     font-weight: normal;
@@ -771,8 +760,8 @@ h2 {
     margin-top: 40px;
     
 }
-.with-icn .reasons-first,
-.no-icn .reasons-first {
+.with-icn .reasons-description,
+.no-icn .reasons-description {
     padding-top: 10px;
 }
 .no-icon {
