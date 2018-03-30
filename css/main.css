@@ -174,7 +174,6 @@ p.ban.gorgeous:before {
     width: 30px;
     height: 2px;
     background-color: #766357;
-    /* border: 1px solid #766357; */
     flex-grow: 1;
     flex-shrink: 0;
 }
@@ -450,13 +449,15 @@ CHECKMARKS ON HOVER--
     font-family: "PTSans", Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
-    width: 434px;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 50px;
 }
 .booking-info {
-    font-size: 11px;
+    font-size: 14px;
     margin-bottom: 40px;
+    line-height: 1.75;
 }
 
 h2 {
@@ -467,6 +468,7 @@ h2 {
 }
 .feedback-form {
     width: 568px;
+    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     height: 481px;
@@ -663,10 +665,15 @@ h2 {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 40px;
+    /*  */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 .reasons-introduction {
-    width: 500px;
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 35px;
@@ -674,19 +681,24 @@ h2 {
     text-align: center;
     text-transform: uppercase;
 }
+.reasons-introduction h3 {
+    margin-top: 40px;
+}
 
 .with-picture {
-    color: #ffffff;
-    text-align: center;
+    color: #fff;
     width: 1200px;
     height: 256px;
     background-color: #81b3d2;
 }
 .with-picture h3 {
-    width: 200px;
+    width: 300px;
 }
-.reasons-description {
-    margin-top: 20px;
+.landscape h3 {
+    width: 258px;
+}
+.attraction-description > .reasons-description {
+    padding-top: 40px;
 }
 
 .reasons li p {
@@ -700,15 +712,13 @@ h2 {
 
 
 .attr-descr {
-    /*font-family: PTSans, Arial, Helvetica, sans-serif;*/
     font-weight: normal;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 10px;
-    padding-right: 50px;
-    padding-left: 50px;
+    /* padding-right: 50px;
+    padding-left: 50px; */
 }
-
+.attraction-description {
+    width: 400px;
+}
 .attraction-photo {
     margin: 0;
     padding: 0;
@@ -727,6 +737,42 @@ h2 {
     float: left;
     background-image: url("../img/foto-landscape.jpg");    
 }
+.landscape .attraction-description {
+    float: right;
+}
+.landscape .reasons-description {
+    padding-top: 20px;
+}
+
+
+.attraction-description > .number-dash {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: none;
+    padding-left: 170px;
+    padding-right: 170px;
+}
+.number-dash::after, 
+.number-dash::before {
+    
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+    /* s */
+}
+.number-dash:before {
+    margin-right: 3px;
+    margin-left: auto;
+}
+.number-dash:after {
+    margin-left: 3px;
+    margin-right: auto;
+}
+
+
 .with-icn {
   display: flex;
   justify-content: space-between;
@@ -734,23 +780,65 @@ h2 {
 }
 .no-icn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: top;
   width: 1200px;
   background-color: #eeeeee;
+  margin-bottom: 50px;
 }
-
+.no-icn ul {
+    list-style: none;
+    padding: 0;
+}
+.no-icn li {
+    display: inline-block;
+}
+.no-icon {
+    width: 395px;
+    margin-bottom: 50px;
+    padding: 0 40px;
+    align-self: baseline;
+}
+.no-icon h3 {
+    width: 220px;
+    margin-top: 35px;
+}
+.no-icon > .number-dash {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: none;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+.no-icon .number-dash::after, 
+.no-icon .number-dash::before {
+    
+    background-color: #000;
+}
+.no-icon .attr-descr {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.landscape {
+    margin-top: 50px;
+}
 .with-icon {
     display: inline-block;
     position: relative;
     width: 400px;
     padding: 20px;
-    margin: 10px, 0;
+    /* margin: 10px, 0; */
     font-family: PTSans, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 14px;
     padding-right: 50px;
     padding-left: 50px;
+}
+.with-icon p {
+    margin-top: 0;
 }
 .with-icon::before {
     display: block;
@@ -764,9 +852,7 @@ h2 {
 .no-icn .reasons-description {
     padding-top: 10px;
 }
-.no-icon {
-    margin-bottom: 40px;
-}
+
 .icon-home::before {
     background-image: url(../img/icon-house.png);
     background-repeat: no-repeat;
