@@ -126,22 +126,23 @@
   
     </div>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <div>
+      <a onclick="document.getElementById('id01').style.display='block'">Поиск гостиницы в Седоне</a>
+      <!-- <div>
         <a href="#hotel-booking">Поиск гостиницы в Седоне</a>
-      </div>
-      <section class="hotel-booking">
+      </div> -->
+      <section class="hotel-booking" id="id01">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
     
         <div class="feedback-form-group">
           <label class="dates" for="first-date">Дата заезда:
-            <input type="text" name="first-date" class="date" id="first-date" placeholder="24 апреля 2017">
+            <input type="text" name="first-date" class="date" id="first-date" value="24 апреля 2017">
           </label>
     
         </div>
     
         <div class="feedback-form-group">
           <label class="dates" for="last-date">Дата выезда:
-            <input type="text" name="last-date" class="date" id="last-date" placeholder="4 июля 2017">
+            <input type="text" name="last-date" class="date" id="last-date" value="4 июля 2017">
           </label>
     
         </div>
