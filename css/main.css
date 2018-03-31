@@ -530,8 +530,8 @@ h2 {
     z-index: 10;
     display: none;
 }
-.feedback-form a:hover .hotel-booking {
-    display: box;
+.hotel-booking:target {
+    display: block;
 }
 .feedback-form-group{
     display: flex;
@@ -690,6 +690,7 @@ h2 {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     color: #ffffff;
     position: relative;
+    border: none;
 }
 .hotel-search-button:hover {
     background-color: #669ec0;
