@@ -125,6 +125,7 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -80px;
+    background-color: #6f7b84;
 }
 .blurry-banner {
     background-image: url(../img/foto-background.jpg);
@@ -276,21 +277,26 @@ p.ban.gorgeous:before {
 }
 .breadcrumps p {
     font-family: PTSans, Arial, Helvetica, sans-serif;
+    font-size: 11px;
     display: inline-block;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 15px 10px 15px;
+    
 }
-.hotels-returned {
+.breadcrumps .hotels-returned {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-weight: bold;
     margin-left: 55px;
 }
 .sorting-type {
-    margin-left: 30px;
+    margin-left: 15px;
+}
+.sort-type {
+    margin-left: 5px;
 }
 .breadcrumps-current {
-    margin-left: 15px;
+    margin-left: 10px;
     color: #81b3d2;
 }
 .breadcrumps p>a {
@@ -305,9 +311,19 @@ p.ban.gorgeous:before {
     color: #000;
     border-bottom: none;
 }
-.triangle-up {
-    margin-left: 220px;
+.ascending {
+    margin-left: 480px;
     border-bottom: none;
+    margin-right: 5px;
+}
+.triangle {
+    color: #cacaca;
+    font-size: 16px;
+    text-decoration: none;
+}
+.breadcrumps .active,
+.triangle:active {
+    color: #81b3d2;
 }
 
 /*-----------------------------------------------------------------------------------------------
@@ -467,12 +483,12 @@ h2 {
     margin-left: auto;
 }
 .feedback-form {
-    width: 568px;
-    margin-top: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    top: 2085px;
+    left: 50%;
+    margin-left: -285px;
+    width: 570px;
     height: 481px;
-    /*border: 1px solid #000;*/
 }
 .feedback-form a {
     display: block;
@@ -498,70 +514,94 @@ h2 {
     background-color: #503e33;
     color: rgba(255,255,255,0.33);
 }
+
+
 .feedback-form > section {
     position: relative;
+    /* display: none; */
 }
 .hotel-booking {
     position: absolute;
-     
-    z-index: 10;
-    /* margin: 0;
-    padding: 0; */
+    padding: 55px; 
     list-style: none;
     background: #ffffff;
     border: 1px solid transparent;
     box-shadow: 0 2px 5px 2px #000;
-    
+    z-index: 10;
+    display: none;
+}
+.feedback-form a:hover .hotel-booking {
+    display: box;
 }
 .feedback-form-group{
-    padding: 0 50px;
-    margin-bottom: 15px;
-    margin-top: 30px;
+    display: flex;
+    padding: 0;
+    margin-bottom: 30px;
+    line-height: 40px;
+    vertical-align: middle;
 }
 
-/*.feedback-form > section:hover .hotel-booking {
+.feedback-form > section:hover .hotel-booking {
     display: block;
-} включить когда будет дизайн формы*/
+} 
 .feedback-form-group label {
     font-family: "PTSansBold", Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    padding-left: 5px;
+    display: block;
+    width: 100%;
+}
+.feedback-form-group > .kd {
+    padding-left: 60px;
 }
 .feedback-form-group input{
-    width: 300px;
+    float: right;
     height: 38px;
+    width: 345px;
+    color: #000;
     background-color: #f2f2f2;
     text-transform: uppercase;
     font-family: "PTSans", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    margin-left: 50px;
     padding-left: 5px;
+    padding-right: 40px;
+    border: 0px solid transparent;
 }
+.hotel-booking input:hover {
+    background-color: #ebebeb;
+}
+.hotel-booking input:active {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+}
+
 .dates {
     position: relative;
-    width: 300px;
     right: 1px;
 }
 .date > input {
-    padding-left: 15px;
     right: -55px;
 }
 .dates::after {
     content: "";
     display: inline-block;
     position: absolute;
-    top: 1px;
+    top: 5px;
     right: 5px;
     width: 21px;
     height: 22px;
-    /* margin-left: -25px; */
     background-image: url(../img/calendar.png);
 }
 .dates:hover::after {
-    background-image: url(../img/calendar-hover.png)
+    background-image: url(../img/calendar-hover.png);
+    background-color: #ebebeb;
+
 }
 .dates:active::after {
-    background-image: url(../img/calendar-active.png)
+    background-image: url(../img/calendar-active.png);
+    background-color: #fff;
+    
 }
 
 
@@ -570,23 +610,19 @@ h2 {
     position: relative;
     width: 300px;
     right: 1px;
-}
-.people {
     margin-right: 5px;
     display: flex;
 }
-/* input.people {
-    padding: 0;
+.kd .input-persons {
     margin: 0;
-} */
+}
+
 .people input {
     width: 38px;
     margin: 0;
+    text-align: center;
+}
 
-}
-.half-width {
-    display: flex;
-}
 
 .adults > input {
     padding-left: 15px;
@@ -594,7 +630,14 @@ h2 {
 .input-persons {
     display: flex;
     position: relative;
+    float: right;
     margin-left: 25px;
+    outline: none;
+    border: 1px solid transparent;
+}
+.input-persons > input {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .input-persons::after {
     content: "";
@@ -603,12 +646,16 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     line-height: 38px;
+    padding-left: 30px;
+    background-color: #f2f2f2;
 }
-.input-persons::after:hover {
-    background-image: url(../img/icon-plus-hover.png)
+.input-persons:hover::after {
+    background-image: url(../img/icon-plus-hover.png);
+    background-color: #ebebeb;
+
 }
-.input-persons::after:active {
-    background-image: url(../img/icon-plus-active.png)
+.input-persons:active::after {
+    background-image: url(../img/icon-plus-active.png);
 }
 .input-persons::before {
     content: "";
@@ -616,12 +663,17 @@ h2 {
     background-image: url(../img/icon-minus.png);
     background-repeat: no-repeat;
     background-position: center;
+    line-height: 38px;
+    padding-left: 30px;
+    background-color: #f2f2f2;
 }
 .input-persons:hover::before {
-    background-image: url(../img/icon-minus-hover.png)
+    background-image: url(../img/icon-minus-hover.png);
+    background-color: #ebebeb;
+
 }
 .input-persons:active::before {
-    background-image: url(../img/icon-minus-active.png)
+    background-image: url(../img/icon-minus-active.png);
 }
 
 .hotel-search-button {
@@ -630,7 +682,7 @@ h2 {
     min-height: 58px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
+    margin-top: 50px;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #81b3d2;
@@ -647,7 +699,12 @@ h2 {
     color: #ffffff 30%;
 }
 
-
+/*------------------------------------------------------------------------------------------------------
+------------------------------------------------MAP-----------------------------------------------------
+------------------------------------------------------------------------------------------------------*/
+.map {
+    z-index: -10;
+}
 /* ------------------------------------------------------ INDEX PAGE ADVERTICEMENT -------------------------- */
 .reasons {
     font-family: "PTSans", Arial, Helvetica, sans-serif;
@@ -713,8 +770,7 @@ h2 {
 
 .attr-descr {
     font-weight: normal;
-    /* padding-right: 50px;
-    padding-left: 50px; */
+    
 }
 .attraction-description {
     width: 400px;
@@ -880,6 +936,9 @@ h2 {
 /* ------------------------------------------------------------------------
 ----------------------------------- HOTEL CARDS -----
 -------------------------------------------------------------------------------------- */
+.hotels-list {
+    margin-top: 0;
+}
 .hotel-card {
     display: block;
     width: 1200px;
@@ -891,22 +950,20 @@ h2 {
     display: block;
     float: left;
    
-    margin-left: 60px;
-    /* margin-top: 30px;
-    margin-bottom: 30px; */
+    margin-left: 70px;
+    margin-top: 30px;
 }
 .hotel-card-info {
     display: block;
     position: relative;
-    width: 920px;
+    width: 990px;
     height: 150px;
     float: right;
 }
 .hotel-name {
     list-style: none;
     position: relative;
-    left: 30px;
-    top: -10px;
+    left: 20px;
     text-transform: uppercase;
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 21px;
@@ -917,16 +974,15 @@ h2 {
     text-transform: uppercase;
     position: relative;
     top: -20px;
-    left: 30px;
+    left: 20px;
 }
 .price-range{
     font-family: PTSans, Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    display: block;
     position: relative;
-    top: -90px;
-    left: 380px;
+    top: -50px;
+    left: 140px;
 }
 .star {
     float: right;
@@ -935,24 +991,24 @@ h2 {
 .stars {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 75px;
 }
 .rating-score, .show-details, .book-me {
     font-family: PTSans, Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 16px;
+    height: 30px;
     text-transform: uppercase;
     position: absolute;
     top: 95px;
-    padding: 5px 15px;
+    border: none;
 }
 
 .show-details {
     color: #fff;
     width: 110px;
-    height: 25px;
     background-color: #81b3d2;
-    left: 30px;
+    left: 20px;
 }
 .show-details:hover {
     background-color: #669ec0;
@@ -964,9 +1020,8 @@ h2 {
 .book-me {
     color: #fff;
     width: 145px;
-    height: 25px;
     background-color: #766357;
-    left: 250px;
+    left: 140px;
 }
 .book-me:hover {
     background-color: #604e43;
@@ -976,10 +1031,13 @@ h2 {
     color: rgba(255, 255, 255, 0.33)
 }
 .rating-score {
-    width: 110px;
-    height: 25px;
+    display: block;
+    width: 115px;
+    height: 30px;
     background-color: #f2f2f2;
     right: 75px;
+    text-align: center;
+    padding-top: 5px;
 }
 /* ------------------------------------------------------------------------
 ----------------------------------- FOOTER -----
@@ -988,11 +1046,18 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
     list-style: none;
 
+}
+.footer-visitsedona {
+    padding-right: 100px;
+}
+.footer-social {
+    padding-right: 75px;
 }
 .main-footer li {
     display: inline;
@@ -1001,11 +1066,14 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
 }
-
+.visitsedona {
+    font-family: PTSansBold, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}
 .footer-social a {
-    width: 46px;
-    height: 48px;
-    padding: 12px;
+    width: 50px;
+    height: 50px;
 }
 .footer-social a:nth-child(1) {
     padding: 14px 15px;
@@ -1019,14 +1087,12 @@ h2 {
 .social-button {
     display: inline-block;
     background-color: #81b3d2;
-    margin: 3px;
     vertical-align: middle;
 }
 
 
 .social-button:hover {
     background-color: #669ec0;
-    
 }
 .social-button:active {
     background-color: #5496bd;    
@@ -1036,6 +1102,10 @@ img.animate1:active {
     opacity: 0.3;/* прозрачность для других браузеров */
 
 }
+.foot-copyright {
+    padding-right: 20px;
+}
+
 .website-by {
     display: inline-block;
     margin-top: 10px;
