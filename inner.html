@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+</head>
 
+<body>
+
+  <div class="page">
     <header class="main-header container">
       <nav class="main-navigation">
-          <div class="sedona-logo">
-          
-              <a class="main-header-logo">
-                <img src="img/logo.png" width="138" height="70" alt="Логотип города Седоны" fill="#81b3d2">
-              </a>
-            
-          </div>
+        <div class="sedona-logo">
+
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип города Седоны" fill="#81b3d2">
+          </a>
+
+        </div>
         <ul class="site-navigation">
           <li class="top-menu">
             <a href="#">Информация</a>
@@ -26,7 +28,7 @@
           <li class="top-menu">
             <a href="#">Фото и видео</a>
           </li>
-          
+
           <li class="top-menu">
             <a href="#">Карта штата</a>
           </li>
@@ -69,7 +71,7 @@
             <form action="" method="post">
               <ul class="hotel-properties">
                 <li>
-                  
+
                   <input class="hotel-property" type="checkbox" id="hotel" name="hotel" value="4" checked />
                   <label class="hotel-types" for="hotel">Гостиница</label>
                 </li>
@@ -78,32 +80,36 @@
                   <label class="hotel-types" for="motel">Мотель</label>
                 </li>
                 <li>
-                  <input class="hotel-property" type="checkbox" id="apartments" name="apartments" value="6"  checked />
+                  <input class="hotel-property" type="checkbox" id="apartments" name="apartments" value="6" checked />
                   <label class="hotel-types" for="apartments">Апартаменты</label>
                 </li>
               </ul>
             </form>
           </li>
           <li class="banner-column">
-          <div class="filter-range">
-            <div class="filter-range-title">Стоимость в сутки (р)</div>
-            <div class="price-control">
-              <label class="min-price"><input type="text" name="min-price" value="от 0"></label>
-              <label class="max-price"><input type="text" name="max-price" value="до 3000"></label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+            <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р)</div>
+              <div class="price-control">
+                <label class="min-price">
+                  <input type="text" name="min-price" value="от 0">
+                </label>
+                <label class="max-price">
+                  <input type="text" name="max-price" value="до 3000">
+                </label>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <button class="btn-transparent" type="submit">Показать</button>
-          </div>
           </li>
-          
+
         </ul>
-        
+
       </section>
 
       <section class="search-results-header">
@@ -112,14 +118,18 @@
 
           <p class="sorting-type">Сортировка:</p>
           <p class="breadcrumps-current">По цене</p>
-          <p class="sort-type"><a href="#">По типу</a></p>
-          <p class="sort-type"><a href="#">По рейтингу</a></p>
-          
+          <p class="sort-type">
+            <a href="#">По типу</a>
+          </p>
+          <p class="sort-type">
+            <a href="#">По рейтингу</a>
+          </p>
+
 
           <a class="triangle ascending" href="#">&#9650;</a>
           <a class="triangle descending active" href="#">&#9660;</a>
-        
-            
+
+
         </div>
       </section>
       <section class="hotels-found">
@@ -130,11 +140,11 @@
               <h4 class="hotel-name">Amara Resort &amp; Spa</h4>
               <p class="hotel-type">Гостиница</p>
               <p class="price-range">от 4000 р.</p>
-      
+
               <button type="button" class="show-details">Подробнее</button>
               <button type="button" class="book-me">Забронировать</button>
               <div class="rating-score">Рейтинг: 8.5</div>
-      
+
               <div class="stars four-stars">
                 <p class="few-stars">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -161,7 +171,7 @@
                         <img class="star" src="img/icon-star.svg" width="20" height="20" fill="#81b3d2">
                         <img class="star" src="img/icon-star.svg" width="20" height="20" fill="#81b3d2">
                         <img class="star" src="img/icon-star.svg" width="20" height="20" fill="#81b3d2"> -->
-      
+
                 </p>
               </div>
             </div>
@@ -222,7 +232,7 @@
                   </svg>
                   <!-- <img class="star" src="img/icon-star.svg" width="20" height="20" fill="#81b3d2">
                         <img class="star" src="img/icon-star.svg" width="20" height="20" fill="#81b3d2"> -->
-      
+
                 </p>
               </div>
             </div>
@@ -238,12 +248,12 @@
             <b class="visitsedona">#VISITSEDONA</b>
           </p>
         </li>
-    
+
         <li class="footer-social">
           <a class="social-button twitter" href="#">
-    
+
             <img class="animate1" src="img/icon-tw.png" width="17px" height="16px" alt="Твиттер" z-index="2">
-    
+
           </a>
           <a class="social-button facebook" href="#">
             <img class="animate1" src="img/icon-fb.png" width="12px" height="22px" alt="Фейсбук">
@@ -251,8 +261,8 @@
           <a class="social-button youtube" href="#">
             <img class="animate1" src="img/icon-youtube.png" width="20px" height="16px" alt="Youtube">
           </a>
-    
-    
+
+
         </li>
         <li class="foot-copyright">
           <p>
@@ -289,6 +299,7 @@
         </li>
       </ul>
     </footer>
-    </body>
-    
-    </html>
+  </div>
+</body>
+
+</html>

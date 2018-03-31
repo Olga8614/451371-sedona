@@ -60,7 +60,13 @@ input[type="radio"].visually-hidden {
     display: none;
     
 }
-
+.page {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid transparent;
+    box-shadow: 0 0 30px 30px #ebebeb;
+}
 /*--------------------------------------------------------------------------------------- 
 ----------------------------------------- HEADER -------------------------------------- 
 ----------------------------------------------------------------------------------------*/
@@ -1133,3 +1139,9 @@ img.animate1:active {
     fill: #000;
 }
 
+.the-main-foot {
+    margin-top: -100px;
+    opacity: 0.8;
+    background-color: #fff;
+    border-right:2px solid #fff;
+}
