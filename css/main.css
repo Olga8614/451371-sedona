@@ -1110,9 +1110,8 @@ h2 {
 }
 
 .main-footer li {
-    display: inline;
-    width: 400px;
     text-align: center;
+    width: 400px;
 }
 .footer-visitsedona, .footer-social, .foot-copyright {
     margin-top: auto;
@@ -1124,8 +1123,8 @@ h2 {
     font-size: 21px;
 }
 .footer-social a {
-    width: 50px;
-    height: 50px;
+    width: 47px;
+    height: 47px;
 }
 .footer-social a:nth-child(1) {
     padding: 14px 15px;
@@ -1166,6 +1165,7 @@ img.animate1:active {
     padding-right: 10px;
     vertical-align: top;
     fill: #111111;
+    
 }
 .htmlacademy-button:hover svg {
     fill: #81b3d2;
@@ -1175,6 +1175,7 @@ img.animate1:active {
 }
 .htmlacademy-button svg {
     fill: #000;
+    width: 113px;
 }
 
 .the-main-foot {
