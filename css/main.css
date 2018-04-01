@@ -782,6 +782,7 @@ h2 {
     font-size: 14px;
     display: inline-block;
     text-align: center;
+    width: 270px;
 }
 
 
@@ -893,6 +894,10 @@ h2 {
 .no-icon .attr-descr {
     padding-right: 50px;
     padding-left: 50px;
+}
+.no-icon .attr-descr:last-of-type {
+    padding-right: 0;
+    padding-left: 0;
 }
 .landscape {
     margin-top: 50px;
