@@ -784,8 +784,16 @@ h2 {
     text-align: center;
     width: 270px;
 }
-
-
+.reasons > .reasons-introduction > p {
+    width: 500px;
+}
+.city > .attraction-description > p {
+    width: 280px;
+}
+.with-icn > .icon-food > p,
+.with-icn > .icon-gift > p {
+    width: 290px;
+}
 .attr-descr {
     font-weight: normal;
     
