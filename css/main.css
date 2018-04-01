@@ -201,6 +201,7 @@ p.ban.gorgeous:before {
 --------------------------------------------------------------------*/
 .banner-menu {
     display: flex;
+    list-style: none;
 }
 .banner-column .header-menu {
     margin-bottom: 10px;
@@ -208,16 +209,16 @@ p.ban.gorgeous:before {
 .banner-menu > li {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 16px;
-    width: 200px;
+    width: 215px;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 55px;
+    margin-left: 35px;
     margin-right: 4px;
     text-transform: uppercase;
     
 }
 .banner-menu > li:nth-child(3) {
-    padding-left: 220px;
+    padding-left: 230px;
     padding-top: 20px;
 }
 .header-menu {
@@ -229,7 +230,7 @@ p.ban.gorgeous:before {
 -------------------------------------------------------------------*/
 .hotel-properties, .banner-menu {
     list-style: none;
-    margin-left: -20px;
+    margin-left: 0;
     
     color: #e3ebf2;
 }
@@ -419,7 +420,7 @@ p.ban.gorgeous:before {
     left: 0;
 }
 .range-toggle-max {
-    left: 80%;
+    left: 78%;
 }
 .range-toggle:hover {    
     box-shadow: 0 2px 0 1px grey;
@@ -427,7 +428,7 @@ p.ban.gorgeous:before {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 33px;
     font-size: 14px;
     line-height: 20px;
     color: #fff;
@@ -1063,13 +1064,15 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
-    margin-top: 30px;
+    min-height: 120px;
+    margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
+    align-content: center;
     list-style: none;
-
+    background-color: #fff;
 }
 .footer-visitsedona {
     padding-right: 100px;
@@ -1080,7 +1083,7 @@ h2 {
 .main-footer li {
     display: inline;
 }
-.footer-visitsedona, .footer-social, .footer-copyright {
+.footer-visitsedona, .footer-social, .foot-copyright {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -1151,7 +1154,7 @@ img.animate1:active {
 }
 
 .the-main-foot {
-    margin-top: -100px;
+    margin-top: -120px;
     opacity: 0.8;
     background-color: #fff;
     border-right:2px solid #fff;
