@@ -1090,6 +1090,9 @@ h2 {
 /* ------------------------------------------------------------------------
 ----------------------------------- FOOTER -----
 -------------------------------------------------------------------------------------- */
+.hotel-card:last-child {
+    margin-bottom: -12px;
+}
 .main-footer {
     display: flex;
     flex-wrap: wrap;
@@ -1108,6 +1111,8 @@ h2 {
 
 .main-footer li {
     display: inline;
+    width: 400px;
+    text-align: center;
 }
 .footer-visitsedona, .footer-social, .foot-copyright {
     margin-top: auto;
