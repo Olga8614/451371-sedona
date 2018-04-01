@@ -854,7 +854,6 @@ h2 {
 .no-icn {
   display: flex;
   justify-content: space-around;
-  align-items: top;
   width: 1200px;
   background-color: #eeeeee;
   margin-bottom: 50px;
