@@ -80,7 +80,7 @@ input[type="radio"].visually-hidden {
     text-transform: uppercase;
     list-style: none;
     width: 239px;
-    min-height: 50px;
+    min-height: 55px;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -145,9 +145,9 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/banner-photo.jpg);
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 97px;
     
-    clip-path: polygon(0 0, 1200px 0, 1200px 460px, 950px 485px, 950px 460px, 600px 515px, 250px 460px, 250px 485px, 0 460px);
+    clip-path: polygon(0 0, 1200px 0, 1200px 450px, 950px 475px, 950px 450px, 600px 507px, 250px 450px, 250px 475px, 0 450px);
 }
 .ban {
     text-align: center;
@@ -155,9 +155,8 @@ input[type="radio"].visually-hidden {
 
 }
 .welcome img {
-    /* position: absolute; */
     margin-top: 65px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
 }
 
@@ -192,7 +191,7 @@ p.ban.gorgeous:before {
     margin-left: 10px;
 }
 .sedona {
-    margin-top: 50px;
+    margin-top: 54px;
     margin-bottom: 35px;
 }
 
@@ -750,7 +749,7 @@ h2 {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     font-size: 21px;
     text-align: center;
     text-transform: uppercase;
@@ -853,6 +852,7 @@ h2 {
 }
 .no-icn {
   display: flex;
+  
   justify-content: space-around;
   width: 1200px;
   background-color: #eeeeee;
