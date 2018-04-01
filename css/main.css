@@ -736,7 +736,7 @@ h2 {
 }
 .reasons h3 {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     font-weight: bold;
     /*  */
     margin-left: auto;
@@ -768,7 +768,7 @@ h2 {
     width: 300px;
 }
 .landscape h3 {
-    width: 258px;
+    width: 260px;
 }
 .attraction-description > .reasons-description {
     padding-top: 40px;
@@ -922,7 +922,7 @@ h2 {
 }
 .with-icn .reasons-description,
 .no-icn .reasons-description {
-    padding-top: 10px;
+    padding-top: 0;
 }
 
 .icon-home::before {
