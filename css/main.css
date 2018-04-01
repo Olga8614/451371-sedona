@@ -787,8 +787,8 @@ h2 {
 .reasons > .reasons-introduction > p {
     width: 500px;
 }
-.city > .attraction-description > p {
-    width: 280px;
+.with-picture > .attraction-description > p {
+    width: 300px;
 }
 .with-icn > .with-icon > p {
     width: 290px;
