@@ -130,8 +130,8 @@
           <p class="booking-info">Укажите предполагаемые даты поездки,
             <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
-        <div class="map">
-          <img src="img/map.jpg" width="1200" height="475" alt="Карта окрестностей Седоны">
+        <div class="map" alt="Карта окрестностей Седоны">
+          <!-- <img src="img/map.jpg" width="1200" height="475" > -->
   
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -139,23 +139,26 @@
           <!-- <div>
           <a href="#hotel-booking">Поиск гостиницы в Седоне</a>
         </div> -->
+        
           <section class="hotel-booking" id="id01">
             <h2 class="visually-hidden">Поиск гостиницы</h2>
   
-            <div class="feedback-form-group">
-              <label class="dates" for="first-date">Дата заезда:
-                <input type="text" name="first-date" class="date" id="first-date" value="24 апреля 2017">
-              </label>
-  
-            </div>
-  
-            <div class="feedback-form-group">
-              <label class="dates" for="last-date">Дата выезда:
-                <input type="text" name="last-date" class="date" id="last-date" value="4 июля 2017">
-              </label>
-  
-            </div>
-            <div class="feedback-form-group half-width">
+            <p class="feedback-form-group date">
+              <label class="dates" for="first-date">Дата заезда:</label>
+              <input type="text" name="first-date" class="date" id="first-date" value="24 апреля 2017">
+            
+            
+              <button class="calendar"></button>
+            
+            </p>
+            
+            <p class="feedback-form-group date">
+              <label class="dates" for="last-date">Дата выезда:</label>
+              <input type="text" name="last-date" class="date" id="last-date" value="4 июля 2017">
+              <button class="calendar"></button>
+            
+            </p>
+            <p class="feedback-form-group half-width">
   
               <label class="people ad" for="adults">Взрослые:
                 <span class="input-persons">
@@ -168,7 +171,7 @@
                 </span>
               </label>
   
-            </div>
+            </p>
             <button class="hotel-search-button">Найти</button>
           </section>
   

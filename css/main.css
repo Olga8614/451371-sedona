@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
     margin-right: auto;
     margin-left: auto;
     border: 1px solid transparent;
-    box-shadow: 0 0 30px 30px #ebebeb;
+    box-shadow: 0 0 15px 5px #ebebeb;
 }
 /*--------------------------------------------------------------------------------------- 
 ----------------------------------------- HEADER -------------------------------------- 
@@ -77,16 +77,14 @@ input[type="radio"].visually-hidden {
     text-align: center;
     text-transform: uppercase;
     list-style: none;
-    width: 240px;
+    width: 239px;
     min-height: 50px;
     margin: 0;
     padding: 0;
     background-color: #fff;
 
 }
-.top-menu:last-child {
-    margin-right: -5px;
-}
+
 .main-navigation {
     background-color: #fff;
     height: 50px;
@@ -103,6 +101,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
+    justify-content: stretch;
     flex-wrap: wrap;
     width: 1200px;
 }
@@ -248,11 +247,11 @@ p.ban.gorgeous:before {
 .hotel-types::before {
     content: "";
     height: 23px;
-    width: 23px;
-    margin-right: 17px;
-    
+    width: 27px;
+    margin-right: 13px;
     display: inline-block;
     background-image: url(../img/checkbox-off.png);
+
     /* color: #fff;     */
 }
 .checked::before {
@@ -541,7 +540,9 @@ h2 {
 }
 .feedback-form-group{
     display: flex;
+    justify-content: space-between;
     padding: 0;
+    margin: 0;
     margin-bottom: 30px;
     line-height: 40px;
     vertical-align: middle;
@@ -556,7 +557,7 @@ h2 {
     text-transform: uppercase;
     padding-left: 5px;
     display: block;
-    width: 100%;
+    /* width: 80%; */
 }
 .feedback-form-group > .kd {
     padding-left: 60px;
@@ -564,14 +565,13 @@ h2 {
 .feedback-form-group input{
     float: right;
     height: 38px;
-    width: 345px;
+    width: 310px;
     color: #000;
     background-color: #f2f2f2;
     text-transform: uppercase;
     font-family: "PTSans", Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding-left: 5px;
-    padding-right: 40px;
+    
     border: 0px solid transparent;
 }
 .hotel-booking input:hover {
@@ -579,38 +579,42 @@ h2 {
 }
 .hotel-booking input:active {
     background-color: #fff;
-    border: 1px solid #ebebeb;
+    border: 2px solid #ebebeb;
 }
 
 .dates {
     position: relative;
+    width: 120px;
     right: 1px;
 }
 .date > input {
     right: -55px;
+    padding-left: 5px;
+    padding-right: 40px;
 }
-.dates::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    width: 21px;
-    height: 22px;
+
+.calendar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
     background-image: url(../img/calendar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 38px;
+    border: none;
+    margin-left: -5px;
 }
-.dates:hover::after {
-    background-image: url(../img/calendar-hover.png);
+.calendar:hover {
     background-color: #ebebeb;
-
+    background-image: url(../img/calendar-hover.png);
 }
-.dates:active::after {
-    background-image: url(../img/calendar-active.png);
+.calendar:active {
     background-color: #fff;
-    
+    border: 2px solid #ebebeb;
+    background-image: url(../img/calendar-active.png);
 }
-
-
 
 .people {
     position: relative;
@@ -710,6 +714,11 @@ h2 {
 ------------------------------------------------MAP-----------------------------------------------------
 ------------------------------------------------------------------------------------------------------*/
 .map {
+    background-image: url(../img/map.jpg);
+    background-color: #d5e0bb;
+    margin-top: 135px;
+    height: 590px;
+    width: 100%;
     z-index: -10;
 }
 /* ------------------------------------------------------ INDEX PAGE ADVERTICEMENT -------------------------- */
@@ -949,14 +958,13 @@ h2 {
 .hotel-card {
     display: block;
     width: 1200px;
-    height: 150px;
+    min-height: 150px;
     margin-left: -35px;
     border-bottom: 1px solid #e5e5e5;
 }
 .hotel-card  .hotel-photo {
     display: block;
     float: left;
-   
     margin-left: 70px;
     margin-top: 30px;
 }
@@ -964,12 +972,14 @@ h2 {
     display: block;
     position: relative;
     width: 990px;
-    height: 150px;
+    min-height: 150px;
     float: right;
 }
 .hotel-name {
     list-style: none;
     position: relative;
+    /* padding-right: 120px; */
+    width: 750px;
     left: 20px;
     text-transform: uppercase;
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
@@ -1007,7 +1017,7 @@ h2 {
     height: 30px;
     text-transform: uppercase;
     position: absolute;
-    top: 95px;
+    bottom: 30px;
     border: none;
 }
 
@@ -1054,6 +1064,7 @@ h2 {
     flex-wrap: wrap;
     width: 1200px;
     margin-top: 30px;
+    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-around;
@@ -1145,3 +1156,7 @@ img.animate1:active {
     background-color: #fff;
     border-right:2px solid #fff;
 }
+
+
+
+
