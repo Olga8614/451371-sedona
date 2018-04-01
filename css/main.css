@@ -77,11 +77,12 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
     color: #000;
     text-align: center;
+
     text-transform: uppercase;
     list-style: none;
-    width: 239px;
-    min-height: 55px;
+    /* width: 239px; */
     margin: 0;
+    /* margin-right: 15px; */
     padding: 0;
     background-color: #fff;
 
@@ -103,7 +104,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 1200px;
 }
@@ -111,8 +112,13 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
     color: #000;
     font-size: 14px;
+    line-height: 1;
     display: block;
-    padding: 20px 15px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
 }
 .top-menu:nth-child(3) {
     margin-left: 243px;
@@ -137,7 +143,7 @@ input[type="radio"].visually-hidden {
 .blurry-banner {
     background-image: url(../img/foto-background.jpg);
     margin-top: -10px;
-    height: 215px;
+    height: 227px;
     
 
 }
@@ -155,7 +161,7 @@ input[type="radio"].visually-hidden {
 
 }
 .welcome img {
-    margin-top: 65px;
+    margin-top: 60px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -202,6 +208,7 @@ p.ban.gorgeous:before {
 .banner-menu {
     display: flex;
     list-style: none;
+    margin: 0;
 }
 .banner-column .header-menu {
     margin-bottom: 10px;
@@ -209,17 +216,17 @@ p.ban.gorgeous:before {
 .banner-menu > li {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 16px;
+    text-transform: uppercase;
     width: 215px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 22px;
     margin-left: 35px;
     margin-right: 4px;
-    text-transform: uppercase;
     
 }
 .banner-menu > li:nth-child(3) {
     padding-left: 230px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .header-menu {
     width: 400px;
@@ -319,7 +326,7 @@ p.ban.gorgeous:before {
     border-bottom: none;
 }
 .ascending {
-    margin-left: 480px;
+    margin-left: 488px;
     border-bottom: none;
     margin-right: 5px;
 }
@@ -410,10 +417,10 @@ p.ban.gorgeous:before {
 .range-toggle {
     position: absolute;
     top: -10px;
-    border-radius: 15px/15px;
-    border: solid 10px #fff;
-    width: 25px;
-    height: 25px;
+    border-radius: 50%;
+    border: solid 8px #fff;
+    width: 20px;
+    height: 20px;
     background-color: grey;
 }
 .range-toggle-min {
@@ -427,7 +434,8 @@ p.ban.gorgeous:before {
 }
 .btn-transparent {
     display: block;
-    margin: 0 auto;
+    margin-top: 34px;
+    margin-left: 84px;
     padding: 6px 33px;
     font-size: 14px;
     line-height: 20px;
@@ -505,12 +513,11 @@ h2 {
     color: #ffffff;
     position: relative;
     font-family: "PTSans", Arial, Helvetica, sans-serif;
-    font-size: 21px;
-    padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 32px;
+    padding: 10px;
+    padding-top: 28px;
     
 }
 .feedback-form a:hover {
@@ -528,7 +535,7 @@ h2 {
 }
 .hotel-booking {
     position: absolute;
-    padding: 55px; 
+    padding: 53px 55px 53px 55px; 
     list-style: none;
     background: #ffffff;
     border: 1px solid transparent;
@@ -544,7 +551,7 @@ h2 {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     line-height: 40px;
     vertical-align: middle;
 }
@@ -556,9 +563,8 @@ h2 {
     font-family: "PTSansBold", Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    padding-left: 5px;
+    padding-left: 0;
     display: block;
-    /* width: 80%; */
 }
 .feedback-form-group > .kd {
     padding-left: 60px;
@@ -590,7 +596,7 @@ h2 {
 }
 .date > input {
     right: -55px;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-right: 40px;
 }
 
@@ -629,7 +635,7 @@ h2 {
 }
 
 .people input {
-    width: 38px;
+    width: 45px;
     margin: 0;
     text-align: center;
 }
@@ -693,7 +699,7 @@ h2 {
     min-height: 58px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 51px;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #81b3d2;
@@ -739,18 +745,16 @@ h2 {
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 21px;
     font-weight: bold;
-    /*  */
     margin-left: auto;
     margin-right: auto;
     display: block;
-    padding-right: 50px;
-    padding-left: 50px;
+    
 }
 .reasons-introduction {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
     font-size: 21px;
     text-align: center;
     text-transform: uppercase;
@@ -762,7 +766,7 @@ h2 {
 .with-picture {
     color: #fff;
     width: 1200px;
-    height: 256px;
+    min-height: 256px;
     background-color: #81b3d2;
 }
 .with-picture h3 {
@@ -772,13 +776,19 @@ h2 {
     width: 260px;
 }
 .attraction-description > .reasons-description {
-    padding-top: 40px;
+    padding-top: 45px;
+    margin-top: 0;
 }
-
+.attraction-description > h3 {
+    line-height: 1.1;
+    width: 165px;
+}
+.with-icon-heading {
+    margin-bottom: 27px;
+}
 .reasons li p {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    text-align: center;
     font-size: 14px;
     display: inline-block;
     text-align: center;
@@ -786,12 +796,21 @@ h2 {
 }
 .reasons > .reasons-introduction > p {
     width: 500px;
+    line-height: 1.2;
 }
-.with-picture > .attraction-description > p {
+.city > .attraction-description > p {
     width: 300px;
+    line-height: 1.2;
+
+}
+.landscape > .attraction-description > p {
+    width: 305px;
+    line-height: 1.2;
+
 }
 .with-icn > .with-icon > p {
     width: 290px;
+    line-height: 1.4;
 }
 .attr-descr {
     font-weight: normal;
@@ -821,10 +840,6 @@ h2 {
 .landscape .attraction-description {
     float: right;
 }
-.landscape .reasons-description {
-    padding-top: 20px;
-}
-
 
 .attraction-description > .number-dash {
     display: flex;
@@ -861,10 +876,10 @@ h2 {
 }
 .no-icn {
   display: flex;
-  
   justify-content: space-around;
   width: 1200px;
   background-color: #eeeeee;
+  padding-top: 10px;
   margin-bottom: 50px;
 }
 .no-icn ul {
@@ -881,9 +896,10 @@ h2 {
     align-self: baseline;
 }
 .no-icon h3 {
-    width: 220px;
+    width: 160px;
     margin-top: 35px;
 }
+
 .no-icon > .number-dash {
     display: flex;
     align-items: center;
@@ -905,6 +921,9 @@ h2 {
 .no-icon .attr-descr:last-of-type {
     padding-right: 0;
     padding-left: 0;
+    margin-top: 10px;
+    line-height: 1.4;
+
 }
 .landscape {
     margin-top: 50px;
@@ -991,9 +1010,8 @@ h2 {
 .hotel-name {
     list-style: none;
     position: relative;
-    /* padding-right: 120px; */
-    width: 750px;
-    left: 20px;
+    width: 550px;
+    left: 24px;
     text-transform: uppercase;
     font-family: PTSansBold, Arial, Helvetica, sans-serif;
     font-size: 21px;
@@ -1004,7 +1022,7 @@ h2 {
     text-transform: uppercase;
     position: relative;
     top: -20px;
-    left: 20px;
+    left: 24px;
 }
 .price-range{
     font-family: PTSans, Arial, Helvetica, sans-serif;
@@ -1021,13 +1039,13 @@ h2 {
 .stars {
     display: block;
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 75px;
 }
 .rating-score, .show-details, .book-me {
     font-family: PTSans, Arial, Helvetica, sans-serif;
     font-size: 16px;
-    height: 30px;
+    height: 27px;
     text-transform: uppercase;
     position: absolute;
     bottom: 30px;
@@ -1038,7 +1056,7 @@ h2 {
     color: #fff;
     width: 110px;
     background-color: #81b3d2;
-    left: 20px;
+    left: 24px;
 }
 .show-details:hover {
     background-color: #669ec0;
@@ -1067,7 +1085,7 @@ h2 {
     background-color: #f2f2f2;
     right: 75px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 8px;
 }
 /* ------------------------------------------------------------------------
 ----------------------------------- FOOTER -----
@@ -1081,17 +1099,13 @@ h2 {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 0;
     justify-content: space-around;
     align-content: center;
     list-style: none;
     background-color: #fff;
 }
-.footer-visitsedona {
-    padding-right: 100px;
-}
-.footer-social {
-    padding-right: 75px;
-}
+
 .main-footer li {
     display: inline;
 }
@@ -1122,8 +1136,6 @@ h2 {
     background-color: #81b3d2;
     vertical-align: middle;
 }
-
-
 .social-button:hover {
     background-color: #669ec0;
 }
@@ -1135,10 +1147,6 @@ img.animate1:active {
     opacity: 0.3;/* прозрачность для других браузеров */
 
 }
-.foot-copyright {
-    padding-right: 20px;
-}
-
 .website-by {
     display: inline-block;
     margin-top: 10px;
@@ -1159,7 +1167,6 @@ img.animate1:active {
 }
 .htmlacademy-button:active svg {
     fill: #bdbbbc;
-
 }
 .htmlacademy-button svg {
     fill: #000;
