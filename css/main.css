@@ -825,8 +825,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-transform: none;
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .number-dash::after, 
 .number-dash::before {
@@ -883,8 +883,8 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     text-transform: none;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .no-icon .number-dash::after, 
 .no-icon .number-dash::before {
