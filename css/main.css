@@ -21,10 +21,8 @@ html {
     box-sizing: border-box;
 }
 
-.body {
+body {
   background-color: #efefef;
-  
-  
 }
 img {
     max-width: 100%;
@@ -58,6 +56,9 @@ input[type="radio"].visually-hidden {
 }
 .checkbox, .visually-hidden {
     display: none;
+    
+}
+.background {
     
 }
 .page {
