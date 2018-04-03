@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -42,16 +42,16 @@
     <main class="container">
       <div class="banner photobanner">
         <p class="ban welcome">
-          <img src="img/welcome.png" alt="Welcome">
+          <img src="img/welcome.png" alt="Welcome" width="188" height="45">
         </p>
         <p class="ban gorgeous">
-          <img src="img/gorgeous.png" alt="to the gorgeous">
+          <img src="img/gorgeous.png" alt="to the gorgeous" width="176" height="30">
         </p>
         <p class="ban sedona">
-          <img src="img/sedona.png" alt="Sedona">
+          <img src="img/sedona.png" alt="Sedona" width="458" height="78">
         </p>
         <p class="ban sucks">
-          <img src="img/sucks.png" alt="cos Grand Ganyon sucks">
+          <img src="img/sucks.png" alt="cos Grand Ganyon sucks" width="296" height="80">
         </p>
 
       </div>
@@ -59,7 +59,7 @@
       <section class="about-sedona">
         <h2 class="visually-hidden">О Седоне</h2>
         <ul class="reasons">
-          <li class="reasons-introduction">
+          <li class="reasons-intro">
             <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </li>
@@ -67,8 +67,8 @@
             <div class="attraction-photo">
             </div>
             <div class="attraction-description">
-              <h3 class="reasons-description">Настоящий городок</h3>
-              <p class="attr-descr number-dash">№1</p>
+              <h3>Настоящий городок</h3>
+              <p class="number-dash">№1</p>
               <p class="attr-descr">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
 
@@ -96,9 +96,9 @@
             <div class="attraction-photo">
             </div>
             <div class="attraction-description">
-              <h3 class="reasons-description">Там есть
+              <h3>Там есть
                 <br>мост дьявола</h3>
-              <p class="attr-descr number-dash">№2</p>
+              <p class="number-dash">№2</p>
               <p class="attr-descr">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
 
@@ -106,19 +106,19 @@
           <li class="no-icn">
             <ul>
               <li class="no-icon">
-                <h3 class="reasons-description">Небольшая площадь
+                <h3>Небольшая площадь
                 </h3>
-                <p class="attr-descr number-dash">№3</p>
+                <p class="number-dash">№3</p>
                 <p class="attr-descr">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="no-icon">
-                <h3 class="reasons-description">Красивая дорога</h3>
-                <p class="attr-descr number-dash">№4</p>
+                <h3>Красивая дорога</h3>
+                <p class="number-dash">№4</p>
                 <p class="attr-descr">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
               <li class="no-icon">
-                <h3 class="reasons-description">Мало туристов</h3>
-                <p class="attr-descr number-dash">№5</p>
+                <h3>Мало туристов</h3>
+                <p class="number-dash">№5</p>
                 <p class="attr-descr">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </ul>
@@ -159,17 +159,21 @@
 
             <label class="people ad" for="adults">Взрослые:
               <span class="input-persons">
+                  <button class="persons minus"></button>
                 <input type="text" name="adults" id="adults" value="2">
+                <button class="persons plus"></button>
               </span>
             </label>
             <label class="people kd" for="kids">Дети:
               <span class="input-persons">
-                <input type="text" name="kids" id="kids" value="0">
+                  <button class="persons minus"></button>
+                  <input type="text" name="kids" id="kids" value="0">
+                  <button class="persons plus"></button>
               </span>
             </label>
 
           </p>
-          <button class="hotel-search-button">Найти</button>
+          <button class="booking-btn" id="booking-button">Найти</button>
         </section>
 
       </form>
@@ -205,7 +209,7 @@
         <li class="foot-copyright">
           <p>
             <b class="footer website-by">WEBSITE BY</b>
-            <a class="footer htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="footer htmlacademy-button" href="https://htmlacademy.ru/intensive/htmlcss" title="Интенсивный онлайн-курс Профессиональный HTML и CSS, уровень 1">
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39">
                 <title>logo_name</title>
                 <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z"
