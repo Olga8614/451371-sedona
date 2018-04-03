@@ -28,9 +28,7 @@ body {
   background-color: #f2f2f2;
   font-family: 'PTSans', Arial, Helvetica, sans-serif;
 }
-h3 {
-   font-family: "PTSansBold", Arial, Helvetica, sans-serif;
-}
+
 img {
   max-width: 100%;
   height: auto;
@@ -633,6 +631,7 @@ h2 {
 .hotel-booking input:active {
   background-color: #fff;
   border: 2px solid #ebebeb;
+  outline: none;
 }
 
 .dates {
@@ -642,15 +641,14 @@ h2 {
 }
 
 .date>input {
-  right: -55px;
   padding-left: 10px;
   padding-right: 40px;
 }
 
 .calendar {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: -5px;
   background-color: #f2f2f2;
   background-image: url(../img/calendar.png);
   background-repeat: no-repeat;
@@ -658,7 +656,6 @@ h2 {
   width: 40px;
   height: 38px;
   border: none;
-  margin-left: -5px;
 }
 
 .calendar:hover {
@@ -669,7 +666,9 @@ h2 {
 .calendar:active {
   background-color: #fff;
   border: 2px solid #ebebeb;
+  border-left: none;
   background-image: url(../img/calendar-active.png);
+  outline: none;
 }
 
 .people {
@@ -703,6 +702,11 @@ h2 {
 
 .persons, .persons:hover, .persons:active {
   border: 1px solid transparent;
+  outline: none;
+}
+.input-persons > input:active {
+  border-left: none;
+  border-right: none;
 }
 .persons {
   width: 40px;
@@ -724,6 +728,10 @@ h2 {
 
 .plus:active {
   background-image: url(../img/icon-plus-active.png);
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+  border-left: none;
+  outline: none;
 }
 
 .minus {
@@ -742,6 +750,10 @@ h2 {
 
 .minus:active {
   background-image: url(../img/icon-minus-active.png);
+  background-color: #fff;
+  border: 2px solid #ebebeb;
+  outline: none;
+  border-right: none;
 } 
 
 .booking-btn {
