@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PTSansBold";
+  font-family: "PTSans";
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -75,8 +75,8 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
   margin-left: auto;
   border: 1px solid transparent;
-  -webkit-box-shadow: 0 0 15px 5px #ebebeb;
-  box-shadow: 0 0 15px 5px #ebebeb;
+  -webkit-box-shadow: 0 7 15px 5px #ebebeb;
+  box-shadow: 0 7 15px 5px #ebebeb;
 }
 
 .top-menu {
@@ -88,6 +88,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  letter-spacing: 0.2px;
+  min-width: 126px;
 }
 
 .main-navigation {
@@ -110,10 +112,11 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 1200px;
+  padding-left: 57px;
+  padding-right: 51px;
 }
 
 .top-menu a {
@@ -128,9 +131,6 @@ input[type="radio"].visually-hidden {
   padding-right: 15px;
 }
 
-.top-menu:nth-child(3) {
-  margin-left: 243px;
-}
 
 .main-header-logo {
   margin-top: -25px;
@@ -575,8 +575,8 @@ h2 {
   list-style: none;
   background: #ffffff;
   border: 1px solid transparent;
-  -webkit-box-shadow: 0 2px 10px 2px #ebebeb;
-  box-shadow: 0 2px 10px 2px #ebebeb;
+  -webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   z-index: 10;
 }
 
@@ -610,9 +610,7 @@ h2 {
   display: block;
 }
 
-.feedback-form-group>.kd {
-  padding-left: 60px;
-}
+
 
 .feedback-form-group input {
   height: 38px;
@@ -673,15 +671,12 @@ h2 {
 
 .people {
   position: relative;
-  width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.kd .input-persons {
-  margin: 0;
-}
+
 
 .people input {
   width: 32px;
@@ -694,7 +689,6 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  margin-left: 25px;
   outline: none;
   border: 1px solid transparent;
 }
@@ -854,7 +848,12 @@ h2 {
   display: flex;
     justify-content: space-between;
 }
-
+.kd>.input-persons {
+  margin-left: 27px;
+}
+.ad>.input-persons {
+  margin-left: 38px;
+}
 .landscape h3 {
   width: 260px;
 }
@@ -1057,12 +1056,14 @@ h2 {
 .icon-gift::before {
   background-image: url(../img/icon-gift.png);
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 118px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .hotels-list {
   margin-top: 0;
+  padding-left: 37px;
 }
 
 .hotel-card {
@@ -1133,8 +1134,8 @@ h2 {
 .stars {
   display: block;
   position: absolute;
-  top: 15px;
-  right: 75px;
+  top: 13px;
+  right: 70px;
   
 }
 
@@ -1142,10 +1143,10 @@ h2 {
 .rating-score,
 .show-details,
 .book-me {
-  font-size: 16px;
+  font-size: 14px;
   height: 27px;
   text-transform: uppercase;
-  
+  font-weight: bold;
   border: none;
 }
 
@@ -1167,9 +1168,8 @@ h2 {
 
 .book-me {
   color: #fff;
-  width: 145px;
+  width: 142px;
   background-color: #766357;
-  left: 140px;
 }
 
 .book-me:hover {
@@ -1193,7 +1193,7 @@ h2 {
 }
 
 .hotel-card:last-child {
-  margin-bottom: -12px;
+  margin-bottom: -18px;
 }
 .hotel-buttons {
   display: -webkit-box;
